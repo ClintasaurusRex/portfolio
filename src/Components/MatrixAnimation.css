@@ -4,7 +4,7 @@
   height: 100vh;
   /* background: black; */
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
@@ -13,12 +13,11 @@
   color: #0f0;
   font-family: "Courier New", Courier, monospace;
   text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
-  white-space: nowrap; /* Ensure text stays on one line */
+  white-space: pre-wrap;
   overflow: hidden;
   border-right: 2px solid #0f0;
-  animation: typing 4s steps(30, end), blink-caret 0.5s step-end infinite;
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
+  animation: typing 2s steps(50, end), blink-caret 0.5s step-end infinite;
+  white-space: nowrap;
 }
 
 @keyframes typing {
@@ -26,7 +25,7 @@
     width: 0;
   }
   to {
-    width: 5%; /* Adjust to fit your message length */
+    width: 15ch; /* Adjust to fit your message length */
   }
 }
 

@@ -1,23 +1,37 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import "./MatrixAnimation.css";
 
 const MatrixAnimation = () => {
   const [messageIndex, setMessageIndex] = useState(0);
-  const messages = ["Wake up Neo...", "The Matrix has you...", "Follow the white rabbit."];
+  const [displayMessage, setDisplayMessage] = useState("");
+  const [isTyping, setIsTyping] = useState(true);
 
+  const messages = useMemo(
+    () => ["Wake up, Neo...", "The Matrix has you...", "Follow the white rabbit."],
+    []
+  );
   useEffect(() => {
     if (messageIndex < messages.length) {
+      setIsTyping(true);
+      setDisplayMessage(messages[messageIndex]);
+
       const timer = setTimeout(() => {
-        setMessageIndex((prevIndex) => prevIndex + 1);
-      }, 4000); // Wait for 4 seconds between messages
-      return () => clearTimeout(timer); // Cleanup timeout
+        setIsTyping(false); // Typing animation ends
+        setTimeout(() => {
+          setMessageIndex((prevIndex) => prevIndex + 1);
+        }, 2000); // Small pause before the next message
+      }, 4000); // Length of the typing animation
+      return () => clearTimeout(timer);
     }
-  }, [messageIndex, messages.length]);
+  }, [messageIndex, messages]);
 
   return (
     <div className="matrix-container">
-      <div className="matrix-text" style={{ width: `${messages[messageIndex].length}ch` }}>
-        {messages[messageIndex]}
+      <div
+        className={`matrix-text ${isTyping ? "typing" : ""}`}
+        key={displayMessage} // Ensure React re-applies the animation
+      >
+        {displayMessage}
       </div>
     </div>
   );
