@@ -1,38 +1,24 @@
-import { useEffect, useState, useMemo } from "react";
+// import { useEffect, useState } from "react";
 import "./MatrixAnimation.css";
+import useMatrixAnimation from "../hooks/useMatrixAnimation";
 
 const MatrixAnimation = () => {
-  const [messageIndex, setMessageIndex] = useState(0);
-  const [displayMessage, setDisplayMessage] = useState("");
-  const [isTyping, setIsTyping] = useState(true);
+  const { messages, messageIndex } = useMatrixAnimation();
+  // const [messageIndex, setMessageIndex] = useState(0);
+  // const messages = ["Wake up, Neo..."];
 
-  const messages = useMemo(
-    () => ["Wake up, Neo...", "The Matrix has you...", "Follow the white rabbit."],
-    []
-  );
-  useEffect(() => {
-    if (messageIndex < messages.length) {
-      setIsTyping(true);
-      setDisplayMessage(messages[messageIndex]);
-
-      const timer = setTimeout(() => {
-        setIsTyping(false);
-        setTimeout(() => {
-          setMessageIndex((prevIndex) => prevIndex + 1);
-        }, 2000);
-      }, 4000);
-      return () => clearTimeout(timer);
-    }
-  }, [messageIndex, messages]);
+  // useEffect(() => {
+  //   if (messageIndex < messages.length) {
+  //     const timer = setTimeout(() => {
+  //       setMessageIndex((prevIndex) => prevIndex + 1);
+  //     }, 4000); // Wait for 4 seconds between messages
+  //     return () => clearTimeout(timer); // Cleanup timeout
+  //   }
+  // }, [messageIndex, messages.length]);
 
   return (
     <div className="matrix-container">
-      <div
-        className={`matrix-text ${isTyping ? "typing" : ""}`}
-        key={displayMessage} // Ensure React re-applies the animation
-      >
-        {displayMessage}
-      </div>
+      <div className="matrix-text">{messages[messageIndex]}</div>
     </div>
   );
 };
