@@ -16,11 +16,11 @@ const MatrixAnimation = () => {
       setDisplayMessage(messages[messageIndex]);
 
       const timer = setTimeout(() => {
-        setIsTyping(false); // Typing animation ends
+        setIsTyping(false);
         setTimeout(() => {
           setMessageIndex((prevIndex) => prevIndex + 1);
-        }, 2000); // Small pause before the next message
-      }, 4000); // Length of the typing animation
+        }, 2000);
+      }, 4000);
       return () => clearTimeout(timer);
     }
   }, [messageIndex, messages]);
