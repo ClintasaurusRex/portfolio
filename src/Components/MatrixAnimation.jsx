@@ -7,7 +7,12 @@ const MatrixAnimation = () => {
 
   return (
     <div className="matrix-container">
-      <div className="matrix-text">{messages[messageIndex]}</div>
+      <div
+        className="matrix-text typing"
+        key={messageIndex} //  This forces re-render for each new message
+      >
+        {messages[messageIndex]}
+      </div>
     </div>
   );
 };
