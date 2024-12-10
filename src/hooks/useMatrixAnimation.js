@@ -14,7 +14,7 @@ const useMatrixAnimation = () => {
       const timer = setTimeout(() => {
         setMessageIndex((prevIndex) => prevIndex + 1);
       }, 4000);
-      return () => clearTimeout(timer); // Cleanup timeout
+      return () => clearTimeout(timer); // Cleanup timeout (important!)
     }
   }, [messageIndex, messages.length]);
   return { messages, messageIndex };
