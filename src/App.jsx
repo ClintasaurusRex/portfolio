@@ -1,20 +1,12 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import "./App.css";
 import MatrixAnimation from "./Components/MatrixAnimation";
 import Footer from "./Components/Footer";
 import ProjectGrid from "./Components/ProjectGrid";
+import useShowProjects from "./hooks/useShowProjects";
 
 function App() {
-  const [showProjects, setShowProjects] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowProjects(true);
-    }, 8000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
+  const showProjects = useShowProjects();
   return (
     <>
       <header>Welcome to my Portfolio</header>
