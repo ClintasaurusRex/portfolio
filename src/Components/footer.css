@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   padding: 0 36%;
-
   margin-top: 20px;
 }
 p {
@@ -15,4 +14,8 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+  font-size: large;
 }
