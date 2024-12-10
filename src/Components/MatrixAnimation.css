@@ -1,7 +1,7 @@
 /* MatrixAnimation.css */
 .matrix-container {
   width: 100vw;
-  height: 100vh;
+  height: 5vh;
   background: black;
   display: flex;
   align-items: flex-start;

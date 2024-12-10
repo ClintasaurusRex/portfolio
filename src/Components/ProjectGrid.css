@@ -1,0 +1,32 @@
+/* src/Components/ProjectGrid.css */
+.project-grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.project-grid {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 25%;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
