@@ -1,0 +1,10 @@
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  margin-top: 20px;
+}
+p {
+  display: flex;
+  justify-content: center;
+}
