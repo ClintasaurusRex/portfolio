@@ -22,6 +22,35 @@ footer {
   width: 20%;
   gap: 10px;
 }
+.nav-homebtns > * {
+  animation: slideIn 0.5s ease-out forwards;
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.nav-homebtns > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.nav-homebtns > *:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.nav-homebtns > *:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.nav-homebtns > *:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .display-1 {
   color: #0f0;

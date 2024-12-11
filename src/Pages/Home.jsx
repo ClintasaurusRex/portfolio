@@ -19,11 +19,11 @@ function Home() {
               website and check out my projects.
             </p>
             <nav className="nav-homebtns">
+              <NavLink to="/about" className="btn btn-success">
+                About Me
+              </NavLink>
               <NavLink to="/projects" className="btn btn-success">
                 View Projects
-              </NavLink>
-              <NavLink to="/about" className="btn btn-success">
-                About
               </NavLink>
               <NavLink to="/contact" className="btn btn-success">
                 Contact
