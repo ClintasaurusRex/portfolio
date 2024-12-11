@@ -17,6 +17,7 @@
   border-right: 2px solid #0f0;
   animation: typing 2s steps(50, end), blink-caret 0.5s step-end infinite;
   white-space: nowrap;
+  padding-left: 100px;
 }
 
 @keyframes typing {

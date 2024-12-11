@@ -1,7 +1,29 @@
 #root {
   background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 header {
   display: flex;
   justify-content: center;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  bottom: 0;
+  margin-top: auto;
+}
+.nav-homebtns {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 10px;
+}
+
+.display-1 {
+  color: #0f0;
+  margin-top: 10px;
 }
