@@ -6,6 +6,7 @@ import "./home.css";
 
 function Home() {
   const welcomeText = useTypingEffect("Welcome to my Portfolio");
+
   return (
     <>
       <MatrixAnimation />
