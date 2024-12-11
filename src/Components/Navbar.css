@@ -1,10 +1,10 @@
 /* src/index.css */
 @import "bootstrap/dist/css/bootstrap.min.css";
-:root {
-}
+
 .container-fluid {
   display: flex;
   flex-direction: column;
+  background-color: black;
 }
 /* Navbar.css */
 .nav-pills.custom-nav-pills {
@@ -17,4 +17,7 @@
 .nav-pills .show > .nav-link {
   color: #0aff07;
   background-color: var(--darkreader-bg--bs-nav-pills-link-active-bg, #181a1b);
+}
+.navbar {
+  padding: 0;
 }
