@@ -1,13 +1,11 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          Portfolio
-        </Link>
+        <NavLink className="navbar-brand" to="/"></NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,48 +24,48 @@ const NavBar = () => {
             role="tablist"
           >
             <li className="nav-item" role="presentation">
-              <Link
-                className="nav-link active rounded-5"
-                id="home-tab2"
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active rounded-5" : "nav-link rounded-5"
+                }
                 to="/"
                 role="tab"
-                aria-selected="true"
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item" role="presentation">
-              <Link
-                className="nav-link rounded-5"
-                id="projects-tab2"
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active rounded-5" : "nav-link rounded-5"
+                }
                 to="/projects"
                 role="tab"
-                aria-selected="false"
               >
                 Projects
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item" role="presentation">
-              <Link
-                className="nav-link rounded-5"
-                id="about-tab2"
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active rounded-5" : "nav-link rounded-5"
+                }
                 to="/about"
                 role="tab"
-                aria-selected="false"
               >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item" role="presentation">
-              <Link
-                className="nav-link rounded-5"
-                id="contact-tab2"
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active rounded-5" : "nav-link rounded-5"
+                }
                 to="/contact"
                 role="tab"
-                aria-selected="false"
               >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
