@@ -1,2 +1,20 @@
 /* src/index.css */
 @import "bootstrap/dist/css/bootstrap.min.css";
+:root {
+}
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+}
+/* Navbar.css */
+.nav-pills.custom-nav-pills {
+  --bs-nav-link-color: var(--bs-white);
+  --bs-nav-pills-link-active-color: var(--bs-primary);
+  --bs-nav-pills-link-active-bg: var(--bs-white);
+  background-color: rgb(0, 175, 0);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #0aff07;
+  background-color: var(--darkreader-bg--bs-nav-pills-link-active-bg, #181a1b);
+}
