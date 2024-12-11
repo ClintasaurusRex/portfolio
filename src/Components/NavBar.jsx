@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/"></a>
+        <Link className="navbar-brand" to="/">
+          Portfolio
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,48 +26,48 @@ const NavBar = () => {
             role="tablist"
           >
             <li className="nav-item" role="presentation">
-              <a
+              <Link
                 className="nav-link active rounded-5"
                 id="home-tab2"
-                href="#home"
+                to="/"
                 role="tab"
                 aria-selected="true"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item" role="presentation">
-              <a
+              <Link
                 className="nav-link rounded-5"
                 id="projects-tab2"
-                href="#projects"
+                to="/projects"
                 role="tab"
                 aria-selected="false"
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item" role="presentation">
-              <a
+              <Link
                 className="nav-link rounded-5"
                 id="about-tab2"
-                href="#about"
+                to="/about"
                 role="tab"
                 aria-selected="false"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item" role="presentation">
-              <a
+              <Link
                 className="nav-link rounded-5"
                 id="contact-tab2"
-                href="#contact"
+                to="/contact"
                 role="tab"
                 aria-selected="false"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
