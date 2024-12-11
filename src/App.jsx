@@ -2,17 +2,19 @@
 import "./App.css";
 import MatrixAnimation from "./Components/MatrixAnimation";
 import Footer from "./Components/Footer";
-import ProjectGrid from "./Components/ProjectGrid";
-import useShowProjects from "./hooks/useShowProjects";
+import NavBar from "./Components/NavBar";
+// import ProjectGrid from "./Components/ProjectGrid";
+// import useShowProjects from "./hooks/useShowProjects";
 
 function App() {
-  const showProjects = useShowProjects();
+  // const showProjects = useShowProjects();
   return (
     <>
-      <header>Welcome to my Portfolio</header>
+      {/* <header>Welcome to my Portfolio</header> */}
+      <NavBar />
       <div className="app">
         <MatrixAnimation />
-        {showProjects && <ProjectGrid />}
+        {/* {showProjects && <ProjectGrid />} */}
         <Footer />
       </div>
     </>
