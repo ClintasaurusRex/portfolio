@@ -6,7 +6,7 @@ const useShowProjects = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowProjects(true);
-    }, 8000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);

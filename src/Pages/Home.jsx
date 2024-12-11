@@ -5,7 +5,6 @@ import Footer from "../Components/Footer";
 function Home() {
   return (
     <>
-      {/* <NavBar /> */}
       <div className="app">
         <MatrixAnimation />
         <Footer />
