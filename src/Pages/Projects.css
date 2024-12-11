@@ -5,13 +5,13 @@
   text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
   overflow: hidden;
   border-right: 2px solid #0f0;
-  animation: typing 2s steps(50, end), blink-caret 0.5s step-end infinite;
+  animation: typingProjects 2s steps(20, end), blink-caret 0.5s step-end infinite;
   white-space: nowrap;
   width: fit-content;
   max-width: 12ch;
 }
 
-@keyframes typing {
+@keyframes typingProjects {
   from {
     width: 0;
   }
