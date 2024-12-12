@@ -5,10 +5,12 @@
   justify-content: space-between;
   padding: 0 36%;
   margin-top: 20px;
+  text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
 }
-p {
+#copywrite {
   display: flex;
   justify-content: center;
+  text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
 }
 footer .footer-container {
   background-color: #000;

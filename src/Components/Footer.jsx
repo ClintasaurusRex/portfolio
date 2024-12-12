@@ -6,7 +6,9 @@ const Footer = () => {
 
   return (
     <footer className="footer-container">
-      <p className={successLink}>© 2024 Clint Arneson-Hiles. All rights reserved.</p>
+      <p className={successLink} id="copywrite">
+        © 2024 Clint Arneson-Hiles. All rights reserved.
+      </p>
       <div className="footer-links">
         <a href="https://github.com/ClintasaurusRex" className={successLink}>
           GitHub
