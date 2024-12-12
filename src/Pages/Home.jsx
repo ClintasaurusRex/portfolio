@@ -6,9 +6,8 @@ import "./home.css";
 
 function Home() {
   const welcomeText = useTypingEffect("Welcome to my Portfolio");
-  const leadText = useTypingEffect(
-    "This is a simple portfolio website created using React. Feel free to explore the website and check out my projects."
-  );
+  const leadText =
+    "This is a simple portfolio website created using React. Feel free to explore the website and check out my projects.";
 
   return (
     <>

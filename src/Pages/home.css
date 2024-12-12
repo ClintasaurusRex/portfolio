@@ -27,6 +27,10 @@ footer {
   opacity: 0;
   transform: translateX(300px);
 }
+.lead {
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+}
 
 .nav-homebtns > *:nth-child(1) {
   animation-delay: 0.1s;
@@ -49,16 +53,6 @@ footer {
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-right-color: transparent;
-  }
-  50% {
-    border-right-color: #0f0;
   }
 }
 
