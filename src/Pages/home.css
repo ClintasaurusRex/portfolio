@@ -52,6 +52,16 @@ footer {
   }
 }
 
+@keyframes blink-caret {
+  from,
+  to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #0f0;
+  }
+}
+
 .display-1 {
   color: #0f0;
   margin-top: 10px;

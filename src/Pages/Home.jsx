@@ -6,6 +6,9 @@ import "./home.css";
 
 function Home() {
   const welcomeText = useTypingEffect("Welcome to my Portfolio");
+  const leadText = useTypingEffect(
+    "This is a simple portfolio website created using React. Feel free to explore the website and check out my projects."
+  );
 
   return (
     <>
@@ -14,10 +17,7 @@ function Home() {
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12">
             <h1 className="display-1">{welcomeText}</h1>
-            <p className="lead">
-              This is a simple portfolio website created using React. Feel free to explore the
-              website and check out my projects.
-            </p>
+            <p className="lead">{leadText}</p>
             <nav className="nav-homebtns">
               <NavLink to="/about" className="btn btn-success">
                 About Me
