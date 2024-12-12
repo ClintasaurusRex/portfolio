@@ -11,7 +11,6 @@ const Projects = () => {
     <div>
       <h1 className="project-text">{typedText}</h1>
       {showProjects && <ProjectGrid />}
-      <p>asdfasfdasdfas</p>
     </div>
   );
 };
