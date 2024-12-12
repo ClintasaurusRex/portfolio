@@ -7,7 +7,7 @@
 }
 
 .project-card {
-  background-color: #f4f4f4;
+  background-color: rgb(30, 33, 34);
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -15,6 +15,7 @@
   text-align: center;
   transition: transform 0.3s ease;
   width: 25%;
+  box-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
 }
 
 .project-card:hover {

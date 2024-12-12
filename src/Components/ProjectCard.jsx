@@ -1,3 +1,4 @@
+import "./projectCard.css";
 const ProjectCard = ({ project, onClick }) => {
   return (
     <div className="project-card" onClick={() => onClick(project)}>
