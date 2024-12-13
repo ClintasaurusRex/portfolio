@@ -30,7 +30,7 @@ function Home() {
             </nav>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="https://via.placeholder.com/500" alt="placeholder" className="img-fluid" />
+            <img src="../public/portImage.jpg" alt="placeholder" className="img-fluid" />
           </div>
         </div>
       </div>
