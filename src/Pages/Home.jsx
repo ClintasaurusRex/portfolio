@@ -7,7 +7,7 @@ import "./home.css";
 function Home() {
   const welcomeText = useTypingEffect("Clint Arneson-Hiles");
   const leadText =
-    "This is a simple portfolio website created using React. Feel free to explore the website and check out my projects.";
+    "I'm Clint, a passionate new web developer and a recent graduate from Lighthouse Labs. Here, you'll find my latest projects, showcasing my skills in creating interactive and user-friendly web applications.";
 
   return (
     <>
