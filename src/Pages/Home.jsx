@@ -14,8 +14,10 @@ function Home() {
       <MatrixAnimation />
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12">
-            <h1 className="display-1">{welcomeText}</h1>
+          <div className="col-lg-15 col-md-6 col-sm-12">
+            <h2 className="display-1" style={{ fontSize: "4rem" }}>
+              {welcomeText}
+            </h2>
             <p className="lead">{leadText}</p>
             <nav className="nav-homebtns">
               <NavLink to="/about" className="btn btn-success">
@@ -29,8 +31,8 @@ function Home() {
               </NavLink>
             </nav>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="../public/portImage.jpg" alt="placeholder" className="img-fluid" />
+          <div className="col-lg-6 col-md-6 col-sm-12" id="photo">
+            <img src="../public/portImage.jpg" alt="Clint Arneson-Hiles" className="img-fluid" />
           </div>
         </div>
       </div>
