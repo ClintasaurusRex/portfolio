@@ -16,33 +16,36 @@ footer {
   bottom: 0;
   margin-top: auto;
 }
+
 .nav-homebtns {
   display: flex;
   flex-direction: column;
   width: 20%;
   gap: 10px;
 }
+
 .nav-homebtns > * {
-  animation: slideIn 0.5s ease-out forwards;
+  animation: slideIn 1.5s ease-out forwards;
   opacity: 0;
   transform: translateX(300px);
 }
+
 .lead {
   color: #0f0;
   text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
 }
 
 .nav-homebtns > *:nth-child(1) {
-  animation-delay: 0.1s;
+  animation-delay: 3s;
 }
 .nav-homebtns > *:nth-child(2) {
-  animation-delay: 0.3s;
+  animation-delay: 3.2s;
 }
 .nav-homebtns > *:nth-child(3) {
-  animation-delay: 0.5s;
+  animation-delay: 3.3s;
 }
 .nav-homebtns > *:nth-child(4) {
-  animation-delay: 0.7s;
+  animation-delay: 3.5s;
 }
 
 @keyframes slideIn {
