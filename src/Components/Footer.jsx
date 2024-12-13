@@ -10,13 +10,28 @@ const Footer = () => {
         © 2024 Clint Arneson-Hiles. All rights reserved.
       </p>
       <div className="footer-links">
-        <a href="https://github.com/ClintasaurusRex" className={successLink}>
+        <a
+          className={successLink}
+          href="https://github.com/ClintasaurusRex"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/clint-arneson-hiles-042bb0321" className={successLink}>
+        <a
+          className={successLink}
+          href="https://www.linkedin.com/in/clint-arneson-hiles-042bb0321"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           LinkedIn
         </a>
-        <a href="mailto:clinthiles1992@gmail.com" className={successLink}>
+        <a
+          className={successLink}
+          href="mailto:clinthiles1992@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Email Me
         </a>
       </div>
