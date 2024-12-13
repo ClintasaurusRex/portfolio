@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+  font-family: "Courier New", Courier, monospace;
 }
 footer .footer-container {
   background-color: #000;
@@ -23,4 +24,5 @@ footer .footer-container {
 .footer-links a:hover {
   text-decoration: underline;
   font-size: large;
+  font-family: "Courier New", Courier, monospace;
 }

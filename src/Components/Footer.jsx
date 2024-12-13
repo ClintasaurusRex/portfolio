@@ -1,13 +1,16 @@
 import "./footer.css";
+import useTypingEffect from "../hooks/typingEffect";
 
 const Footer = () => {
   const successLink =
     "link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover";
 
+  const copywriteText = useTypingEffect("© 2024 Clint Arneson-Hiles. All rights reserved.");
+
   return (
     <footer className="footer-container">
       <p className={successLink} id="copywrite">
-        © 2024 Clint Arneson-Hiles. All rights reserved.
+        {copywriteText}
       </p>
       <div className="footer-links">
         <a
