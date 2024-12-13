@@ -73,3 +73,19 @@ footer {
 .img-fluid {
   box-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
 }
+.lead {
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+  animation: fadeIn 3s ease-in forwards;
+  opacity: 0;
+  animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
