@@ -20,9 +20,9 @@ function Home() {
             </h2>
             <p className="lead">{leadText}</p>
             <nav className="nav-homebtns">
-              <NavLink to="/about" className="btn btn-success">
+              {/* <NavLink to="/about" className="btn btn-success">
                 About Me
-              </NavLink>
+              </NavLink> */}
               <NavLink to="/projects" className="btn btn-success">
                 View Projects
               </NavLink>
@@ -32,7 +32,7 @@ function Home() {
             </nav>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12" id="photo">
-            <img src="../public/portImage.jpg" alt="Clint Arneson-Hiles" className="img-fluid" />
+            <img src="portImage.jpg" alt="Clint Arneson-Hiles" className="img-fluid" />
           </div>
         </div>
       </div>
