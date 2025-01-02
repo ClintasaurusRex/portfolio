@@ -7,11 +7,11 @@ import "./home.css";
 function Home() {
   const welcomeText = useTypingEffect("Clint Arneson-Hiles");
   const leadText =
-    "I'm Clint, a passionate new web developer and a recent graduate from Lighthouse Labs. Here, you'll find my latest projects, showcasing my skills in creating interactive and user-friendly web applications.";
+    "I'm Clint, a passionate new web developer and a recent graduate from Lighthouse Labs. Here, you'll find my latest projects, showcasing my skills in creating interactive and user-friendly web applications. ";
 
   return (
     <>
-      <MatrixAnimation />
+      {/* <MatrixAnimation /> */}
       <div className="container">
         <div className="row">
           <div className="col-lg-15 col-md-6 col-sm-12">
@@ -20,9 +20,9 @@ function Home() {
             </h2>
             <p className="lead">{leadText}</p>
             <nav className="nav-homebtns">
-              {/* <NavLink to="/about" className="btn btn-success">
+              <NavLink to="/about" className="btn btn-success">
                 About Me
-              </NavLink> */}
+              </NavLink>
               <NavLink to="/projects" className="btn btn-success">
                 View Projects
               </NavLink>
