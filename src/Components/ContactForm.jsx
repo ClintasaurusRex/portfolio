@@ -1,14 +1,37 @@
+import "./contactForm.css";
+import useTypingEffect from "../hooks/typingEffect";
+
 const ContactForm = () => {
+  const typedText = useTypingEffect("Let's Connect!");
+
   return (
-    <form>
-      <label htmlFor="name">Name:</label>
-      <input type="text" id="name" name="name" />
-      <label htmlFor="email">Email:</label>
-      <input type="email" id="email" name="email" />
-      <label htmlFor="message">Message:</label>
-      <textarea id="message" name="message" />
-      <button type="submit">Send</button>
-    </form>
+    <div className="contact-container">
+      <h1 className="contact-title">{typedText}</h1>
+      <div className="contact-links">
+        <a href="mailto:clinthiles1992@gmail.com" className="contact-link">
+          <i className="bi bi-envelope-fill"></i>
+          <span>Email</span>
+        </a>
+        <a
+          href="https://github.com/ClintasaurusRex"
+          className="contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="bi bi-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/clint-arneson-hiles-042bb0321"
+          className="contact-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="bi bi-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
   );
 };
 
