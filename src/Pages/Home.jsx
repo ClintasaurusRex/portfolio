@@ -21,7 +21,7 @@ function Home() {
             <p className="lead">{leadText}</p>
             <nav className="nav-homebtns">
               <NavLink to="/about" className="btn btn-success">
-                About Me
+                about Me
               </NavLink>
               <NavLink to="/projects" className="btn btn-success">
                 View Projects
