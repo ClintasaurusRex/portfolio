@@ -6,7 +6,7 @@ export const projects = [
     description:
       "This extension summarizes and saves web articles for later reading. The extension also provides a text box that the user can talk directly to chatGPT with.",
     challenges:
-      "The biggest challenge was working with the chatGPT API and getting the extension to work with the API and this was our first and only extension that my partner and I made. Learning webpack and how to use it was also a challenge.",
+      "The biggest challenge was working with the chatGPT API and getting the extension to work with the API and this was our first and only extension that my partner and I made. Learning webpack and how to use it was also a challenge. This project uses Javascript, React, Chrome API, webpack, and ChatGPT API.",
     link: "https://chromewebstore.google.com/detail/tldr/fdoabojpkjopijhpfhapkddbafljjfff?hl=en-US&utm_source=ext_sidebar",
   },
   {
@@ -14,7 +14,7 @@ export const projects = [
     title: "Jungle",
     summary: "Mock online shopping platform.",
     description:
-      "Jungle is a mini e-commerce application built with Rails 6.1, designed to teach Rails by example. This application allows users to browse and search for products, manage their shopping cart, and securely checkout using Stripe. Additionally, it includes features for user authentication, account management, and an admin dashboard for inventory management.",
+      "Jungle is a mini e-commerce application built with Rails 6.1, designed to teach Rails by example. This application allows users to browse and search for products, manage their shopping cart, and securely checkout using Stripe. Additionally, it includes features for user authentication, account management, and an admin dashboard for inventory management. This project uses Ruby, HTML, Javascript and SCSS.",
     challenges:
       "Jungle was tricky because this was my first project using ruby on rails. Once I started to get the hang of how rails worked, it was a lot easier to understand how to implement the features that I wanted to add to the project and this was actually one of my favorite projects to work on.",
     link: "https://github.com/ClintasaurusRex/jungle",
@@ -24,7 +24,7 @@ export const projects = [
     title: "PhotoLabs",
     summary: "Showcase your work online.",
     description:
-      "PhotoLabs is a modern, full-stack, responsive single-page application (SPA) built with React that allows users to explore, view, and interact with a collection of high-quality photographs. Key features include browsing a diverse collection of photos, navigating through different photo categories, viewing enlarged versions of photos with related images, liking photos, and responsive design for seamless use across devices.",
+      "PhotoLabs is a modern, full-stack, responsive single-page application (SPA) built with React that allows users to explore, view, and interact with a collection of high-quality photographs. Key features include browsing a diverse collection of photos, navigating through different photo categories, viewing enlarged versions of photos with related images, liking photos, and responsive design for seamless use across devices. This project was built with React, JavaScript, HTML, Sass, Express, PostgreSQL.",
     challenges:
       "PhotoLabs was my very first React project which came with many challenges like understanding props and state. Otherwise a very fun project to work on. I also plan to revisit this project and add more features to it.",
     link: "https://github.com/ClintasaurusRex/photoLab",
