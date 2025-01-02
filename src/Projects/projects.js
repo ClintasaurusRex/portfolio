@@ -6,7 +6,7 @@ export const projects = [
     description:
       "This extension summarizes and saves web articles for later reading. The extension also provides a text box that the user can talk directly to chatGPT with.",
     challenges:
-      "The biggest challenge was working with the chatGPT API and getting the extension to work with the API and this was our first and only extension that my partner and I made. Learning webpack and how to use it was also a challenge. This project uses Javascript, React, Chrome API, webpack, and ChatGPT API.",
+      "The biggest challenge was working with the chatGPT API and getting the extension to work with the API and this was our first and only extension that my partner and I made. Learning webpack and how to use it was also a challenge. This project uses Javascript, React, Chrome API, webpack, Scss and ChatGPT API.",
     link: "https://chromewebstore.google.com/detail/tldr/fdoabojpkjopijhpfhapkddbafljjfff?hl=en-US&utm_source=ext_sidebar",
   },
   {
@@ -14,7 +14,7 @@ export const projects = [
     title: "Jungle",
     summary: "Mock online shopping platform.",
     description:
-      "Jungle is a mini e-commerce application built with Rails 6.1, designed to teach Rails by example. This application allows users to browse and search for products, manage their shopping cart, and securely checkout using Stripe. Additionally, it includes features for user authentication, account management, and an admin dashboard for inventory management. This project uses Ruby, HTML, Javascript and SCSS.",
+      "Jungle is a mini e-commerce application built with Rails 6.1, designed to teach Rails by example. This application allows users to browse and search for products, manage their shopping cart, and securely checkout using Stripe. Additionally, it includes features for user authentication, account management, and an admin dashboard for inventory management.This project uses Ruby, HTML, Javascript and SCSS.",
     challenges:
       "Jungle was tricky because this was my first project using ruby on rails. Once I started to get the hang of how rails worked, it was a lot easier to understand how to implement the features that I wanted to add to the project and this was actually one of my favorite projects to work on.",
     link: "https://github.com/ClintasaurusRex/jungle",
@@ -34,7 +34,7 @@ export const projects = [
     title: "Tweeter",
     summary: "Mock twitter application",
     description:
-      "Tweeter is a simple, single-page Twitter clone built primarily with JavaScript, CSS, and HTML. This project is based on the lighthouse-labs/tweeter template repository. It demonstrates basic functionality for posting tweets and viewing a feed of tweets. The repository is public and actively maintained with features such as issues, downloads, and projects enabled.",
+      "Tweeter is a simple, single-page Twitter clone built primarily with JavaScript, CSS, and HTML. This project is based on the lighthouse-labs/tweeter template repository. It demonstrates basic functionality for posting tweets and viewing a feed of tweets. The repository is public and actively maintained with features such as issues, downloads, and projects enabled. This project was built with HTML, CSS, Javascript, jQuery, Express, Node.js.",
     link: "https://github.com/ClintasaurusRex/myTweeter",
   },
   // {
