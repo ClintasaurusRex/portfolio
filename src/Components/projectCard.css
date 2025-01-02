@@ -1,6 +1,17 @@
 .project-card {
-  color: wheat;
+  background-color: rgb(30, 33, 34);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 25%;
+  box-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
 }
-h3 {
-  color: wheat;
+
+.project-card:hover {
+  transform: translateY(-15px);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #0f0, 0 0 20px #0f0;
 }
