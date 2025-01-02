@@ -11,7 +11,13 @@ const ProjectModal = ({ project, onClose }) => {
         </button>
         <h2>{project.title}</h2>
         <p>{project.description}</p>
-        <a href={project.link} target="_blank" rel="noopener noreferrer">
+        <p>{project.challenges}</p>
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-outline-success btn-lg mt-3"
+        >
           View Project
         </a>
       </div>

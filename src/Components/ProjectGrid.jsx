@@ -9,11 +9,13 @@ const ProjectGrid = () => {
   const projects = [
     {
       id: 1,
-      title: "Weather App",
-      summary: "Get real-time weather updates.",
+      title: "T.L.D.R",
+      summary: "A google chrome extension that summarizes articles.",
       description:
-        "A weather forecasting app that uses the OpenWeatherMap API to display real-time weather information for your location. Features include temperature, humidity, and a 7-day forecast.",
-      link: "#",
+        "This extension summarizes and saves web articles for later reading. The extension also provides a text box that the user can talk directly to chatGPT with.",
+      challenges:
+        "The biggest challenge was working with the chatGPT API and getting the extension to work with the API and this was our first and only extension that my partner and I made. Learning webpack and how to use it was also a challenge.",
+      link: "https://chromewebstore.google.com/detail/tldr/fdoabojpkjopijhpfhapkddbafljjfff?hl=en-US&utm_source=ext_sidebar",
     },
     {
       id: 2,
