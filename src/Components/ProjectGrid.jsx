@@ -19,27 +19,31 @@ const ProjectGrid = () => {
     },
     {
       id: 2,
-      title: "Task Manager",
-      summary: "Organize your tasks efficiently.",
+      title: "Jungle",
+      summary: "Mock online shopping platform.",
       description:
-        "A task management app with a sleek user interface. Add, edit, and delete tasks, set deadlines, and track progress. Built with React and localStorage for data persistence.",
-      link: "#",
+        "Jungle is a mini e-commerce application built with Rails 6.1, designed to teach Rails by example. This application allows users to browse and search for products, manage their shopping cart, and securely checkout using Stripe. Additionally, it includes features for user authentication, account management, and an admin dashboard for inventory management.",
+      challenges:
+        "Jungle was tricky because this was my first project using ruby on rails. Once I started to get the hang of how rails worked, it was a lot easier to understand how to implement the features that I wanted to add to the project and this was actually one of my favorite projects to work on.",
+      link: "https://github.com/ClintasaurusRex/jungle",
     },
     {
       id: 3,
-      title: "Portfolio Website",
+      title: "PhotoLabs",
       summary: "Showcase your work online.",
       description:
-        "A personal portfolio website template designed for web developers to showcase their projects and skills. Fully responsive and customizable.",
-      link: "#",
+        "PhotoLabs is a modern, full-stack, responsive single-page application (SPA) built with React that allows users to explore, view, and interact with a collection of high-quality photographs. Key features include browsing a diverse collection of photos, navigating through different photo categories, viewing enlarged versions of photos with related images, liking photos, and responsive design for seamless use across devices.",
+      challenges:
+        "PhotoLabs was my very first React project which came with many challenges like understanding props and state. Otherwise a very fun project to work on. I also plan to revisit this project and add more features to it.",
+      link: "https://github.com/ClintasaurusRex/photoLab",
     },
     {
       id: 4,
-      title: "E-Commerce Site",
-      summary: "Mock online shopping platform.",
+      title: "Tweeter",
+      summary: "Mock twitter application",
       description:
-        "A prototype e-commerce website with product listings, a shopping cart, and a checkout process. Features product filtering and sorting.",
-      link: "#",
+        "Tweeter is a simple, single-page Twitter clone built primarily with JavaScript, CSS, and HTML. This project is based on the lighthouse-labs/tweeter template repository. It demonstrates basic functionality for posting tweets and viewing a feed of tweets. The repository is public and actively maintained with features such as issues, downloads, and projects enabled.",
+      link: "https://github.com/ClintasaurusRex/myTweeter",
     },
     {
       id: 5,
