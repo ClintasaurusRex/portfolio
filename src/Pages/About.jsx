@@ -1,5 +1,5 @@
 import useTypingEffect from "../hooks/typingEffect";
-// import "./About.css";
+import "./about.css";
 
 const About = () => {
   const paragraphs = [
@@ -10,7 +10,7 @@ const About = () => {
   ];
 
   return (
-    <div className="About-container">
+    <div className="about-container">
       <h1 className="about-title">{useTypingEffect("About Me")}</h1>
       <div className="about-content">
         {paragraphs.map((paragraph, i) => (
