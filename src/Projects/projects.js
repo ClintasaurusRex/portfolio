@@ -37,12 +37,12 @@ export const projects = [
       "Tweeter is a simple, single-page Twitter clone built primarily with JavaScript, CSS, and HTML. This project is based on the lighthouse-labs/tweeter template repository. It demonstrates basic functionality for posting tweets and viewing a feed of tweets. The repository is public and actively maintained with features such as issues, downloads, and projects enabled.",
     link: "https://github.com/ClintasaurusRex/myTweeter",
   },
-  {
-    id: 5,
-    title: "Recipe Finder",
-    summary: "Discover new recipes with ease.",
-    description:
-      "A recipe search engine that lets you find recipes by ingredients or cuisine. Features include a favorites list and step-by-step instructions.",
-    link: "#",
-  },
+  // {
+  //   id: 5,
+  //   title: "Recipe Finder",
+  //   summary: "Discover new recipes with ease.",
+  //   description:
+  //     "A recipe search engine that lets you find recipes by ingredients or cuisine. Features include a favorites list and step-by-step instructions.",
+  //   link: "#",
+  // },
 ];
