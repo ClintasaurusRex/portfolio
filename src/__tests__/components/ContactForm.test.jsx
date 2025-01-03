@@ -4,7 +4,7 @@ import { render, screen } from "@testing-library/react";
 import ContactForm from "../../Components/ContactForm";
 
 // Mock the typing effect hook
-vi.mock("../hooks/typingEffect", () => ({
+vi.mock("../../hooks/typingEffect", () => ({
   default: () => "Let's Connect!",
 }));
 
