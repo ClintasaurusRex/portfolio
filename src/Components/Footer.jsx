@@ -1,5 +1,5 @@
 import "./footer.css";
-
+import React from "react";
 import useTypingEffect from "../hooks/typingEffect";
 
 const Footer = () => {
