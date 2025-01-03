@@ -3,7 +3,7 @@ import { describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import ContactForm from "../../Components/ContactForm";
 
-// Mock the typing effect hook
+// **Mock the typing effect hook - It replaces the complex typing animation with a simple static value
 vi.mock("../../hooks/typingEffect", () => ({
   default: () => "Let's Connect!",
 }));
