@@ -1,11 +1,12 @@
 import "./contactForm.css";
 import useTypingEffect from "../hooks/typingEffect";
+import React from "react";
 
 const ContactForm = () => {
   const typedText = useTypingEffect("Let's Connect!");
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" data-testid="contact-container">
       <h1 className="contact-title">{typedText}</h1>
       <div className="contact-links">
         <a href="mailto:clinthiles1992@gmail.com" className="contact-link">
