@@ -1,4 +1,5 @@
 import "./footer.css";
+
 import useTypingEffect from "../hooks/typingEffect";
 
 const Footer = () => {
