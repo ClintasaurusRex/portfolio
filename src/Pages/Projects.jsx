@@ -3,12 +3,12 @@ import "./Projects.css";
 import ProjectGrid from "../Components/ProjectGrid";
 import useTypingEffect from "../hooks/typingEffect";
 import useShowProjects from "../hooks/useShowProjects";
-
+import React from "react";
 const Projects = () => {
   const typedText = useTypingEffect("Projects....");
   const showProjects = useShowProjects();
   return (
-    <div>
+    <div data-testid="projects-container" className="fade-in">
       <h1 className="project-text">{typedText}</h1>
       {showProjects && <ProjectGrid />}
     </div>
