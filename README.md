@@ -16,4 +16,4 @@ A modern, responsive portfolio website built with React and Vite and Jest for te
 - Vite
 - ESLint
 - Modern JavaScript (ES2020+)
-- Jest
+- Jest.
