@@ -1,5 +1,5 @@
 import "./ProjectModal.css";
-
+import React from "react";
 const ProjectModal = ({ project, onClose }) => {
   if (!project) return null;
 
