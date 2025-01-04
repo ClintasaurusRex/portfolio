@@ -3,6 +3,7 @@ import Footer from "../Components/Footer";
 import { NavLink } from "react-router-dom";
 import useTypingEffect from "../hooks/typingEffect";
 import "./home.css";
+import React from "react";
 
 function Home() {
   const welcomeText = useTypingEffect("Clint Arneson-Hiles");
@@ -15,7 +16,7 @@ function Home() {
       <div className="container">
         <div className="row">
           <div className="col-lg-15 col-md-6 col-sm-12">
-            <h2 className="display-1" style={{ fontSize: "4rem" }}>
+            <h2 className="display-1" style={{ fontSize: "4rem" }} data-testid="welcome-text">
               {welcomeText}
             </h2>
             <p className="lead">{leadText}</p>
