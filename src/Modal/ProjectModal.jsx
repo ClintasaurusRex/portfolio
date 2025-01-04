@@ -2,10 +2,10 @@ import "./ProjectModal.css";
 import React from "react";
 const ProjectModal = ({ project, onClose }) => {
   if (!project) return null;
-
   return (
-    <div className="modal-backdrop" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+    <div className="modal-backdrop" data-testid="modal-backdrop">
+      <div className="modal-content" data-testid="modal-content">
+        {/* existing content */}
         <button className="close-button" onClick={onClose}>
           &times;
         </button>
