@@ -22,7 +22,7 @@ export const projects = [
   {
     id: 3,
     title: "PhotoLabs",
-    summary: "Showcase your work online.",
+    summary: "A mock photo gallery application.",
     description:
       "PhotoLabs is a modern, full-stack, responsive single-page application (SPA) built with React that allows users to explore, view, and interact with a collection of high-quality photographs. Key features include browsing a diverse collection of photos, navigating through different photo categories, viewing enlarged versions of photos with related images, liking photos, and responsive design for seamless use across devices. This project was built with React, JavaScript, HTML, Sass, Express, PostgreSQL.",
     challenges:
