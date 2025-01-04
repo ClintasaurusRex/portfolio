@@ -1,5 +1,6 @@
 import useTypingEffect from "../hooks/typingEffect";
 import "./about.css";
+import React from "react";
 
 const About = () => {
   const paragraphs = [
