@@ -61,9 +61,9 @@ footer {
 }
 
 .display-1 {
-  color: #0f0;
+  color: rgb(135, 250, 135);
   margin-top: 10px;
-  text-shadow: 0 5px #0f0, 0 0 10px #0f0;
+  text-shadow: 0 0 0px #0f0, 0 0 10px #0f0;
   font-size: 4rem;
 }
 #photo {
@@ -72,6 +72,7 @@ footer {
 }
 .img-fluid {
   box-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+  margin-top: 25px;
 }
 .lead {
   color: #0f0;

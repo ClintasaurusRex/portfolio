@@ -8,6 +8,11 @@
   text-align: center;
   transition: transform 0.3s ease;
   width: 25%;
+  box-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+  p,
+  h3 {
+    color: white;
+  }
 }
 
 /* .project-card {
@@ -19,7 +24,6 @@
   text-align: center;
   transition: transform 0.3s ease;
   width: 25%;
-  box-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
 } */
 
 .project-card:hover {
