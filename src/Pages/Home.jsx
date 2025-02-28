@@ -3,7 +3,6 @@ import Footer from "../Components/Footer";
 import { NavLink } from "react-router-dom";
 import useTypingEffect from "../hooks/typingEffect";
 import "./home.css";
-import React from "react";
 
 function Home() {
   const welcomeText = useTypingEffect("Clint Arneson-Hiles");
