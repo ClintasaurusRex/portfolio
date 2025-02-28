@@ -31,11 +31,11 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Tweeter",
-    summary: "Mock twitter application",
+    title: "Siding Business",
+    summary: "Website for a siding business",
     description:
-      "Tweeter is a simple, single-page Twitter clone built primarily with JavaScript, CSS, and HTML. This project is based on the lighthouse-labs/tweeter template repository. It demonstrates basic functionality for posting tweets and viewing a feed of tweets. The repository is public and actively maintained with features such as issues, downloads, and projects enabled. This project was built with HTML, CSS, Javascript, jQuery, Express, Node.js.",
-    link: "https://github.com/ClintasaurusRex/myTweeter",
+      "This app is a clean, modern, single-page design that serves as a professional online presence for a siding service business.“SG-Siding” conveys professionalism and quality craftsmanship. It successfully uses modern web design trends—minimalism, clear typography, and effective use of visual space—to create a user-friendly platform that highlights the core offerings of a siding business.",
+    link: "https://shaung.netlify.app/",
   },
   // {
   //   id: 5,
