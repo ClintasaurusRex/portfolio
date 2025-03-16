@@ -11,6 +11,16 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Joyland Prime Academy",
+    summary: "Fullstack application for a school in Kenya",
+    description:
+      "This project features a modern, responsive design built with React and Material UI components, ensuring an optimal user experience across various devices. Information about the school, including its establishment in 2008, is thoughtfully organized and presented clearly through a clean visual hierarchy using cards and papers to distinguish content sections. Its grid-based layout dynamically adjusts to different screen sizes, enhancing accessibility. In addition there is also a ton of admin capabilites that give the admin full control of the application",
+    challenges:
+      "This was my first time working with firebase which just came with a learning curve, but the biggest challenge was this was also my first time using Material U.I, learning the syntax was a challenge but quite a lot of fun.",
+    link: "https://joyland.netlify.app/",
+  },
+  {
+    id: 3,
     title: "Jungle",
     summary: "Mock online shopping platform.",
     description:
@@ -20,7 +30,7 @@ export const projects = [
     link: "https://github.com/ClintasaurusRex/jungle",
   },
   {
-    id: 3,
+    id: 4,
     title: "PhotoLabs",
     summary: "A mock photo gallery application.",
     description:
@@ -30,7 +40,7 @@ export const projects = [
     link: "https://github.com/ClintasaurusRex/photoLab",
   },
   {
-    id: 4,
+    id: 5,
     title: "Siding Business",
     summary: "Website for a siding business",
     description:
