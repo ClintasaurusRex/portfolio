@@ -1,40 +1,188 @@
 // import MatrixAnimation from "../Components/MatrixAnimation";
-import Footer from "../Components/Footer";
-import { NavLink } from "react-router-dom";
-import useTypingEffect from "../hooks/typingEffect";
-import "./home.css";
+import Footer from '../Components/Footer';
+import { NavLink } from 'react-router-dom';
+import useTypingEffect from '../hooks/typingEffect';
+import './home.css';
 
 function Home() {
-  const welcomeText = useTypingEffect("Clint Arneson-Hiles");
+  const welcomeText = useTypingEffect('Clint Arneson-Hiles');
   const leadText =
     "I'm Clint, a passionate new web developer and a recent graduate from Lighthouse Labs. Here, you'll find my latest projects, showcasing my skills in creating interactive and user-friendly web applications. ";
 
   return (
     <>
       {/* <MatrixAnimation /> */}
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-15 col-md-6 col-sm-12">
-            <h2 className="display-1" style={{ fontSize: "4rem" }} data-testid="welcome-text">
-              {welcomeText}
-            </h2>
-            <p className="lead">{leadText}</p>
-            <nav className="nav-homebtns">
-              <NavLink to="/about" className="btn btn-success">
-                About Me
-              </NavLink>
-              <NavLink to="/projects" className="btn btn-success">
-                View Projects
-              </NavLink>
-              <NavLink to="/contact" className="btn btn-success">
-                Contact
-              </NavLink>
-            </nav>
-          </div>
-          <div className="col-lg-6 col-md-6 col-sm-12" id="photo">
-            <img src="portImage.jpg" alt="Clint Arneson-Hiles" className="img-fluid" />
+      <div className='hero-section'>
+        <div className='container'>
+          <div className='hero-content'>
+            <div className='hero-text'>
+              <h2 className='display-1' data-testid='welcome-text'>
+                {welcomeText}
+              </h2>
+              <p className='lead'>{leadText}</p>
+              <nav className='nav-homebtns'>
+                <NavLink to='/about' className='btn btn-success'>
+                  <i className='bi bi-person-circle'></i> About
+                </NavLink>
+                <NavLink to='/projects' className='btn btn-success'>
+                  <i className='bi bi-code-square'></i> Projects
+                </NavLink>
+                <NavLink to='/contact' className='btn btn-success'>
+                  <i className='bi bi-envelope'></i> Contact
+                </NavLink>
+              </nav>
+            </div>
+            <div className='hero-image'>
+              <img
+                src='/portfolio.jpeg'
+                alt='Clint Arneson-Hiles'
+                className='img-fluid'
+              />
+            </div>
           </div>
         </div>
+      </div>
+      <div className='skills-section'>
+        <h2 className='section-title'>Tech Stack</h2>
+        <div className='skills-grid'>
+          {/* Frontend Section */}
+          <div className='skill-card'>
+            <h3>Frontend</h3>
+            <div className='tech-icons'>
+              <img
+                src='/frontEnd/react.svg'
+                alt='React'
+                className='tech-icon react-spin'
+              />
+              <img
+                src='/frontEnd/typescript.svg'
+                alt='TypeScript'
+                className='tech-icon'
+              />
+              <img
+                src='/frontEnd/javascript.svg'
+                alt='JavaScript'
+                className='tech-icon'
+              />
+              <img
+                src='/frontEnd/html5.svg'
+                alt='HTML5'
+                className='tech-icon'
+              />
+              <img src='/frontEnd/css.svg' alt='CSS' className='tech-icon' />
+              <img
+                src='/frontEnd/tailwindcss.svg'
+                alt='Tailwind'
+                className='tech-icon'
+              />
+              <img
+                src='/frontEnd/mui.svg'
+                alt='Material UI'
+                className='tech-icon'
+              />
+            </div>
+            <p>
+              React, TypeScript, JavaScript, HTML5, CSS3, Tailwind, Material UI
+            </p>
+          </div>
+
+          {/* Backend Section */}
+          <div className='skill-card'>
+            <h3>Backend</h3>
+            <div className='tech-icons'>
+              <img
+                src='/backEnd/nodedotjs.svg'
+                alt='Node.js'
+                className='tech-icon'
+              />
+              <img
+                src='/backEnd/express.svg'
+                alt='Express'
+                className='tech-icon'
+              />
+              <img
+                src='/backEnd/rubyonrails.svg'
+                alt='Ruby on Rails'
+                className='tech-icon'
+              />
+              <img
+                src='/backEnd/firebase.svg'
+                alt='Firebase'
+                className='tech-icon'
+              />
+            </div>
+            <p>Node.js, Express, Ruby on Rails, Firebase</p>
+          </div>
+
+          {/* Database Section */}
+          <div className='skill-card'>
+            <h3>Database</h3>
+            <div className='tech-icons'>
+              <img
+                src='/database/mysql.svg'
+                alt='MySQL'
+                className='tech-icon'
+              />
+              <img
+                src='/database/mongodb.svg'
+                alt='MongoDB'
+                className='tech-icon'
+              />
+              <img
+                src='/database/firebase.svg'
+                alt='Firebase'
+                className='tech-icon'
+              />
+            </div>
+            <p>MySQL, MongoDB, Firebase</p>
+          </div>
+
+          {/* Additional Tools Section */}
+          <div className='skill-card'>
+            <h3>Development Tools</h3>
+            <div className='tech-icons'>
+              <img src='/additional/git.svg' alt='Git' className='tech-icon' />
+              <img
+                src='/additional/github.svg'
+                alt='GitHub'
+                className='tech-icon'
+              />
+              <img
+                src='/additional/linux.svg'
+                alt='Linux'
+                className='tech-icon'
+              />
+            </div>
+            <p>Git, GitHub, Linux</p>
+          </div>
+        </div>
+      </div>
+
+      <div className='cta-section'>
+        <h2 className='section-title'>Let's Work Together</h2>
+        <p className='lead'>
+          Looking for a dedicated developer for your next project?
+        </p>
+        <NavLink to='/contact' className='cta-button'>
+          Get In Touch <i className='bi bi-arrow-right'></i>
+        </NavLink>
+      </div>
+      <div className='social-links'>
+        <a
+          href='https://github.com/yourusername'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <i className='bi bi-github'></i>
+        </a>
+        <a
+          href='https://linkedin.com/in/yourusername'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <i className='bi bi-linkedin'></i>
+        </a>
+        {/* Add other social links */}
       </div>
       <Footer />
     </>
