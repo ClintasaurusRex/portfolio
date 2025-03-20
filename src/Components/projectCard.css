@@ -50,3 +50,81 @@
   opacity: 1;
   visibility: visible;
 }
+/* Add these styles for the project cards */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-card {
+    width: 300px;
+    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+    background-color: rgb(30, 33, 34);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .project-card:hover {
+    box-shadow: 0 0 15px #0f0, 0 0 20px #0f0;
+  }
+
+  .project-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-card p {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 2; /* Show only 2 lines on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    max-width: 300px;
+  }
+
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-card p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Keep your existing hover image styles */
+.project-hover-image {
+  position: absolute;
+  left: calc(100% + 20px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+  z-index: 10;
+}
+
+.project-card:hover .project-hover-image {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Adjust the breakpoint to handle mobile devices */
+@media (max-width: 850px) {
+  .project-card {
+    width: 500px;
+  }
+  .project-hover-image {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .project-card {
+    width: 60%;
+  }
+}

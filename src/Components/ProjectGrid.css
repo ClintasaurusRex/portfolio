@@ -47,35 +47,3 @@
     transform: translateX(0);
   }
 }
-
-/* Add these styles for the project cards */
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .project-card {
-    max-width: 280px;
-  }
-
-  .project-card h3 {
-    font-size: 1.25rem;
-  }
-
-  .project-card p {
-    font-size: 0.85rem;
-    -webkit-line-clamp: 2; /* Show only 2 lines on mobile */
-  }
-}
-
-@media (max-width: 480px) {
-  .project-card {
-    max-width: 260px;
-  }
-
-  .project-card h3 {
-    font-size: 1.1rem;
-  }
-
-  .project-card p {
-    font-size: 0.8rem;
-  }
-}
