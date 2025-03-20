@@ -6,8 +6,9 @@ import './home.css';
 
 function Home() {
   const welcomeText = useTypingEffect('Clint Arneson-Hiles');
+  const techStack = useTypingEffect('Tech Stack');
   const leadText =
-    "I'm Clint, a passionate new web developer and a recent graduate from Lighthouse Labs. Here, you'll find my latest projects, showcasing my skills in creating interactive and user-friendly web applications. ";
+    "I'm Clint, a web developer specializing in React, JavaScript, Ruby on Rails, and Node.js. Passionate about crafting clean, user-focused applications, I transitioned from heavy equipment operation to tech, driven by curiosity and continuous learning.";
 
   return (
     <>
@@ -43,7 +44,7 @@ function Home() {
         </div>
       </div>
       <div className='skills-section'>
-        <h2 className='section-title'>Tech Stack</h2>
+        <h2 className='section-title'>{useTypingEffect('Tech Stack')}</h2>
         <div className='skills-grid'>
           {/* Frontend Section */}
           <div className='skill-card'>
@@ -100,9 +101,15 @@ function Home() {
                 alt='Express'
                 className='tech-icon'
               />
+
               <img
                 src='/backEnd/rubyonrails.svg'
                 alt='Ruby on Rails'
+                className='tech-icon'
+              />
+              <img
+                src='/backEnd/python.svg'
+                alt='Python'
                 className='tech-icon'
               />
               <img
@@ -111,7 +118,7 @@ function Home() {
                 className='tech-icon'
               />
             </div>
-            <p>Node.js, Express, Ruby on Rails, Firebase</p>
+            <p>Node.js, Express, Ruby on Rails, Python, Firebase</p>
           </div>
 
           {/* Database Section */}
@@ -121,6 +128,11 @@ function Home() {
               <img
                 src='/database/mysql.svg'
                 alt='MySQL'
+                className='tech-icon'
+              />
+              <img
+                src='/database/postgresql.svg'
+                alt='PostgreSQL'
                 className='tech-icon'
               />
               <img
@@ -134,7 +146,7 @@ function Home() {
                 className='tech-icon'
               />
             </div>
-            <p>MySQL, MongoDB, Firebase</p>
+            <p>MySQL, postgreSQL, MongoDB, Firebase</p>
           </div>
 
           {/* Additional Tools Section */}

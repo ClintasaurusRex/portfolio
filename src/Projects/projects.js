@@ -31,21 +31,20 @@ export const projects = [
     ],
   },
   {
-    id: 3,
-    title: 'Jungle',
-    summary: 'Full-stack mock online shopping platform.',
+    id: 5,
+    title: 'Siding Business',
+    summary: 'Front-end Website for a siding business',
     description:
-      'Jungle is a mini e-commerce application built with Rails 6.1, designed to teach Rails by example. This application allows users to browse and search for products, manage their shopping cart, and securely checkout using Stripe. Additionally, it includes features for user authentication, account management, and an admin dashboard for inventory management.This project uses Ruby, HTML, Javascript and SCSS.',
-    challenges:
-      'Jungle was tricky because this was my first project using ruby on rails. Once I started to get the hang of how rails worked, it was a lot easier to understand how to implement the features that I wanted to add to the project and this was actually one of my favorite projects to work on.',
-    link: 'https://github.com/ClintasaurusRex/jungle',
+      'This app is a clean, modern, single-page design that serves as a professional online presence for a siding service business."SG-Siding" conveys professionalism and quality craftsmanship. It successfully uses modern web design trends—minimalism, clear typography, and effective use of visual space—to create a user-friendly platform that highlights the core offerings of a siding business.',
+    link: 'https://shaung.netlify.app/',
     technologies: [
-      '/backEnd/rubyonrails.svg',
+      '/frontEnd/react.svg',
       '/frontEnd/javascript.svg',
       '/frontEnd/html5.svg',
       '/frontEnd/css.svg',
     ],
   },
+
   {
     id: 4,
     title: 'PhotoLabs',
@@ -65,14 +64,16 @@ export const projects = [
     ],
   },
   {
-    id: 5,
-    title: 'Siding Business',
-    summary: 'Front-end Website for a siding business',
+    id: 3,
+    title: 'Jungle',
+    summary: 'Full-stack mock online shopping platform.',
     description:
-      'This app is a clean, modern, single-page design that serves as a professional online presence for a siding service business."SG-Siding" conveys professionalism and quality craftsmanship. It successfully uses modern web design trends—minimalism, clear typography, and effective use of visual space—to create a user-friendly platform that highlights the core offerings of a siding business.',
-    link: 'https://shaung.netlify.app/',
+      'Jungle is a mini e-commerce application built with Rails 6.1, designed to teach Rails by example. This application allows users to browse and search for products, manage their shopping cart, and securely checkout using Stripe. Additionally, it includes features for user authentication, account management, and an admin dashboard for inventory management.This project uses Ruby, HTML, Javascript and SCSS.',
+    challenges:
+      'Jungle was tricky because this was my first project using ruby on rails. Once I started to get the hang of how rails worked, it was a lot easier to understand how to implement the features that I wanted to add to the project and this was actually one of my favorite projects to work on.',
+    link: 'https://github.com/ClintasaurusRex/jungle',
     technologies: [
-      '/frontEnd/react.svg',
+      '/backEnd/rubyonrails.svg',
       '/frontEnd/javascript.svg',
       '/frontEnd/html5.svg',
       '/frontEnd/css.svg',
