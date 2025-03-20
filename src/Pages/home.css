@@ -80,7 +80,7 @@ footer {
   margin-top: 25px;
   height: 25em;
   width: 25em;
-  margin-left: 10em;
+  /* margin-left: 10em; */
 }
 .lead {
   color: #0f0;
