@@ -310,8 +310,6 @@ footer {
 
 .tech-icon:hover {
   transform: translateY(-5px) scale(1.1);
-  filter: drop-shadow(0 0 5px #0f0) brightness(0) saturate(100%) invert(56%)
-    sepia(96%) saturate(454%) hue-rotate(86deg) brightness(128%) contrast(119%);
 }
 
 /* Add responsive breakpoint for mobile */
@@ -364,14 +362,10 @@ footer {
   height: 40px;
   width: 40px;
   transition: all 0.3s ease;
-  filter: brightness(0) saturate(100%) invert(56%) sepia(96%) saturate(454%)
-    hue-rotate(86deg) brightness(128%) contrast(119%);
 }
 
 .tech-icon:hover {
   transform: translateY(-5px) scale(1.1);
-  filter: drop-shadow(0 0 5px #0f0) brightness(0) saturate(100%) invert(56%)
-    sepia(96%) saturate(454%) hue-rotate(86deg) brightness(128%) contrast(119%);
 }
 
 /* Responsive Breakpoints with maintained theme */
