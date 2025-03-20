@@ -8,7 +8,7 @@ function Home() {
   const welcomeText = useTypingEffect('Clint Arneson-Hiles');
   const techStack = useTypingEffect('Tech Stack');
   const leadText =
-    "I'm Clint, a web developer specializing in React, JavaScript, Ruby on Rails, and Node.js. Passionate about crafting clean, user-focused applications, I transitioned from heavy equipment operation to tech, driven by curiosity and continuous learning.";
+    "I'm Clint, a full-stack web developer specializing in React, JavaScript, Ruby on Rails, and Node.js. Passionate about crafting clean, user-focused applications, I transitioned from heavy equipment operation to tech, driven by curiosity and continuous learning.";
 
   return (
     <>
@@ -198,7 +198,6 @@ function Home() {
                 <span className='tooltip-text'>Firebase</span>
               </div>
             </div>
-            <p>MySQL, postgreSQL, MongoDB, Firebase</p>
           </div>
 
           {/* Additional Tools Section */}
@@ -230,7 +229,6 @@ function Home() {
                 <span className='tooltip-text'>Linux</span>
               </div>
             </div>
-            <p>Git, GitHub, Linux</p>
           </div>
         </div>
       </div>
