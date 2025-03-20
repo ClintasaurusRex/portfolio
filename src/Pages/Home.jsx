@@ -128,30 +128,38 @@ function Home() {
                 />
                 <span className='tooltip-text'>Node.js</span>
               </div>
-              <div className='tech-icon-wrapper'></div>
-              <img
-                src='/backEnd/express.svg'
-                alt='Express'
-                className='tech-icon'
-              />
-              <div className='tech-icon-wrapper'></div>
-              <img
-                src='/backEnd/rubyonrails.svg'
-                alt='Ruby on Rails'
-                className='tech-icon'
-              />
-              <div className='tech-icon-wrapper'></div>
-              <img
-                src='/backEnd/python.svg'
-                alt='Python'
-                className='tech-icon'
-              />
-              <div className='tech-icon-wrapper'></div>
-              <img
-                src='/backEnd/firebase.svg'
-                alt='Firebase'
-                className='tech-icon'
-              />
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/backEnd/express.svg'
+                  alt='Express'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>Node.js</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/backEnd/rubyonrails.svg'
+                  alt='Ruby on Rails'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>Node.js</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/backEnd/python.svg'
+                  alt='Python'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>Node.js</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/backEnd/firebase.svg'
+                  alt='Firebase'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>Node.js</span>
+              </div>
               <div className='tech-icon-wrapper'></div>
             </div>
             <p>Node.js, Express, Ruby on Rails, Python, Firebase</p>
