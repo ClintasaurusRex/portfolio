@@ -28,6 +28,7 @@ const ProjectCard = ({ project, onClick }) => {
         src={getProjectImage(project.title)}
         alt={`${project.title} Preview`}
         className='project-hover-image'
+        loading='lazy'
       />
     </div>
   );
