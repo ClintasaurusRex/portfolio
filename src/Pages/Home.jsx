@@ -180,7 +180,7 @@ function Home() {
         </NavLink>
       </div>
       <div className='social-links'>
-        <a
+        {/* <a
           href='https://github.com/yourusername'
           target='_blank'
           rel='noopener noreferrer'
@@ -193,7 +193,7 @@ function Home() {
           rel='noopener noreferrer'
         >
           <i className='bi bi-linkedin'></i>
-        </a>
+        </a> */}
         {/* Add other social links */}
       </div>
       <Footer />
