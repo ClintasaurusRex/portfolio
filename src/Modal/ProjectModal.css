@@ -48,3 +48,43 @@
   cursor: pointer;
   transition: 0.3s;
 }
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.tech-icon {
+  height: 30px;
+  width: 30px;
+  transition: all 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(56%) sepia(96%) saturate(454%)
+    hue-rotate(86deg) brightness(128%) contrast(119%);
+}
+
+.tech-icon.react-spin {
+  animation: spin 10s linear infinite;
+}
+
+.tech-icon:hover {
+  transform: translateY(-3px);
+  filter: drop-shadow(0 0 5px #0f0) brightness(0) saturate(100%) invert(56%)
+    sepia(96%) saturate(454%) hue-rotate(86deg) brightness(128%) contrast(119%);
+}
+
+.tech-icon.react-spin:hover {
+  animation: spin 10s linear infinite;
+  transform: translateY(-3px) scale(1.1);
+  filter: drop-shadow(0 0 5px #0f0) brightness(0) saturate(100%) invert(56%)
+    sepia(96%) saturate(454%) hue-rotate(86deg) brightness(128%) contrast(119%);
+}

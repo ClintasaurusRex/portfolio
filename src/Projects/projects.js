@@ -8,6 +8,11 @@ export const projects = [
     challenges:
       'The biggest challenge was working with the chatGPT API and getting the extension to work with the API and this was our first and only extension that my partner and I made. Learning webpack and how to use it was also a challenge. This project uses Javascript, React, Chrome API, webpack, Scss and ChatGPT API.',
     link: 'https://chromewebstore.google.com/detail/tldr/fdoabojpkjopijhpfhapkddbafljjfff?hl=en-US&utm_source=ext_sidebar',
+    technologies: [
+      '/frontEnd/react.svg',
+      '/frontEnd/javascript.svg',
+      '/frontEnd/css.svg',
+    ],
   },
   {
     id: 2,
@@ -18,24 +23,12 @@ export const projects = [
     challenges:
       'This was my first time working with firebase which just came with a learning curve, but the biggest challenge was this was also my first time using Material U.I, learning the syntax was a challenge but quite a lot of fun.',
     link: 'https://joyland.netlify.app/',
-  },
-  {
-    id: 5,
-    title: 'Siding Business',
-    summary: 'Front-end Website for a siding business',
-    description:
-      'This app is a clean, modern, single-page design that serves as a professional online presence for a siding service business.“SG-Siding” conveys professionalism and quality craftsmanship. It successfully uses modern web design trends—minimalism, clear typography, and effective use of visual space—to create a user-friendly platform that highlights the core offerings of a siding business.',
-    link: 'https://shaung.netlify.app/',
-  },
-  {
-    id: 4,
-    title: 'PhotoLabs',
-    summary: 'A Full-stack mock photo gallery application.',
-    description:
-      'PhotoLabs is a modern, full-stack, responsive single-page application (SPA) built with React that allows users to explore, view, and interact with a collection of high-quality photographs. Key features include browsing a diverse collection of photos, navigating through different photo categories, viewing enlarged versions of photos with related images, liking photos, and responsive design for seamless use across devices. This project was built with React, JavaScript, HTML, Sass, Express, PostgreSQL.',
-    challenges:
-      'PhotoLabs was my very first React project which came with many challenges like understanding props and state. Otherwise a very fun project to work on. I also plan to revisit this project and add more features to it.',
-    link: 'https://github.com/ClintasaurusRex/photoLab',
+    technologies: [
+      '/frontEnd/react.svg',
+      '/frontEnd/javascript.svg',
+      '/frontEnd/mui.svg',
+      '/backEnd/firebase.svg',
+    ],
   },
   {
     id: 3,
@@ -46,13 +39,43 @@ export const projects = [
     challenges:
       'Jungle was tricky because this was my first project using ruby on rails. Once I started to get the hang of how rails worked, it was a lot easier to understand how to implement the features that I wanted to add to the project and this was actually one of my favorite projects to work on.',
     link: 'https://github.com/ClintasaurusRex/jungle',
+    technologies: [
+      '/backEnd/rubyonrails.svg',
+      '/frontEnd/javascript.svg',
+      '/frontEnd/html5.svg',
+      '/frontEnd/css.svg',
+    ],
   },
-  // {
-  //   id: 5,
-  //   title: "Recipe Finder",
-  //   summary: "Discover new recipes with ease.",
-  //   description:
-  //     "A recipe search engine that lets you find recipes by ingredients or cuisine. Features include a favorites list and step-by-step instructions.",
-  //   link: "#",
-  // },
+  {
+    id: 4,
+    title: 'PhotoLabs',
+    summary: 'A Full-stack mock photo gallery application.',
+    description:
+      'PhotoLabs is a modern, full-stack, responsive single-page application (SPA) built with React that allows users to explore, view, and interact with a collection of high-quality photographs. Key features include browsing a diverse collection of photos, navigating through different photo categories, viewing enlarged versions of photos with related images, liking photos, and responsive design for seamless use across devices. This project was built with React, JavaScript, HTML, Sass, Express, PostgreSQL.',
+    challenges:
+      'PhotoLabs was my very first React project which came with many challenges like understanding props and state. Otherwise a very fun project to work on. I also plan to revisit this project and add more features to it.',
+    link: 'https://github.com/ClintasaurusRex/photoLab',
+    technologies: [
+      '/frontEnd/react.svg',
+      '/frontEnd/javascript.svg',
+      '/frontEnd/html5.svg',
+      '/frontEnd/css.svg',
+      '/backEnd/express.svg',
+      '/database/mysql.svg',
+    ],
+  },
+  {
+    id: 5,
+    title: 'Siding Business',
+    summary: 'Front-end Website for a siding business',
+    description:
+      'This app is a clean, modern, single-page design that serves as a professional online presence for a siding service business."SG-Siding" conveys professionalism and quality craftsmanship. It successfully uses modern web design trends—minimalism, clear typography, and effective use of visual space—to create a user-friendly platform that highlights the core offerings of a siding business.',
+    link: 'https://shaung.netlify.app/',
+    technologies: [
+      '/frontEnd/react.svg',
+      '/frontEnd/javascript.svg',
+      '/frontEnd/html5.svg',
+      '/frontEnd/css.svg',
+    ],
+  },
 ];
