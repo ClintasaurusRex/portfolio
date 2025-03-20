@@ -77,6 +77,11 @@ function Home() {
                 className='tech-icon'
               />
               <img
+                src='/frontEnd/bootstrap.svg'
+                alt='Tailwind'
+                className='tech-icon'
+              />
+              <img
                 src='/frontEnd/mui.svg'
                 alt='Material UI'
                 className='tech-icon'
