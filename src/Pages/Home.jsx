@@ -111,9 +111,6 @@ function Home() {
                 <span className='tooltip-text'>Material UI</span>
               </div>
             </div>
-            <p>
-              React, TypeScript, JavaScript, HTML5, CSS3, Tailwind, Material UI
-            </p>
           </div>
 
           {/* Backend Section */}
@@ -134,7 +131,7 @@ function Home() {
                   alt='Express'
                   className='tech-icon'
                 />
-                <span className='tooltip-text'>Node.js</span>
+                <span className='tooltip-text'>Express</span>
               </div>
               <div className='tech-icon-wrapper'>
                 <img
@@ -142,7 +139,7 @@ function Home() {
                   alt='Ruby on Rails'
                   className='tech-icon'
                 />
-                <span className='tooltip-text'>Node.js</span>
+                <span className='tooltip-text'>Ruby on Rails</span>
               </div>
               <div className='tech-icon-wrapper'>
                 <img
@@ -150,7 +147,7 @@ function Home() {
                   alt='Python'
                   className='tech-icon'
                 />
-                <span className='tooltip-text'>Node.js</span>
+                <span className='tooltip-text'>Python</span>
               </div>
               <div className='tech-icon-wrapper'>
                 <img
@@ -158,37 +155,48 @@ function Home() {
                   alt='Firebase'
                   className='tech-icon'
                 />
-                <span className='tooltip-text'>Node.js</span>
+                <span className='tooltip-text'>Firebase</span>
               </div>
-              <div className='tech-icon-wrapper'></div>
             </div>
-            <p>Node.js, Express, Ruby on Rails, Python, Firebase</p>
           </div>
 
           {/* Database Section */}
           <div className='skill-card'>
             <h3>Database</h3>
             <div className='tech-icons'>
-              <img
-                src='/database/mysql.svg'
-                alt='MySQL'
-                className='tech-icon'
-              />
-              <img
-                src='/database/postgresql.svg'
-                alt='PostgreSQL'
-                className='tech-icon'
-              />
-              <img
-                src='/database/mongodb.svg'
-                alt='MongoDB'
-                className='tech-icon'
-              />
-              <img
-                src='/database/firebase.svg'
-                alt='Firebase'
-                className='tech-icon'
-              />
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/database/postgresql.svg'
+                  alt='PostgreSQL'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>postgreSQL</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/database/mysql.svg'
+                  alt='MySQL'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>MySQL</span>
+              </div>
+
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/database/mongodb.svg'
+                  alt='MongoDB'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>MongoDB</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/database/firebase.svg'
+                  alt='Firebase'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>Firebase</span>
+              </div>
             </div>
             <p>MySQL, postgreSQL, MongoDB, Firebase</p>
           </div>
@@ -197,17 +205,30 @@ function Home() {
           <div className='skill-card'>
             <h3>Development Tools</h3>
             <div className='tech-icons'>
-              <img src='/additional/git.svg' alt='Git' className='tech-icon' />
-              <img
-                src='/additional/github.svg'
-                alt='GitHub'
-                className='tech-icon'
-              />
-              <img
-                src='/additional/linux.svg'
-                alt='Linux'
-                className='tech-icon'
-              />
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/additional/git.svg'
+                  alt='Git'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>Git</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/additional/github.svg'
+                  alt='GitHub'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>Github</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/additional/linux.svg'
+                  alt='Linux'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>Linux</span>
+              </div>
             </div>
             <p>Git, GitHub, Linux</p>
           </div>
