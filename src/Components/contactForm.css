@@ -4,6 +4,7 @@
   align-items: center;
   padding: 2rem;
   color: #0f0;
+  z-index: 0;
 }
 
 .contact-title {
