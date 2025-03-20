@@ -1,0 +1,149 @@
+.about-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.about-card {
+  background: rgb(30, 33, 34);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 0 15px #0f0;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1s ease-out;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #0f0;
+  box-shadow: 0 0 10px #0f0;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+.about-name {
+  color: #0f0;
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-shadow: 0 0 5px #0f0;
+}
+
+.about-title {
+  color: #0f0;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 3px #0f0;
+}
+
+.about-content {
+  color: #fff;
+  line-height: 1.6;
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 2px #0f0;
+}
+
+.about-interests {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #0f0;
+}
+
+.about-interests h3 {
+  color: #0f0;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 5px #0f0;
+}
+
+.about-interests ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.about-interests li {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 255, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #0f0;
+  transition: all 0.3s ease;
+}
+
+.about-interests li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px #0f0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .about-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-name {
+    font-size: 1.75rem;
+  }
+
+  .about-title {
+    font-size: 1.1rem;
+  }
+
+  .about-interests ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-card-container {
+    padding: 1rem;
+  }
+
+  .about-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-name {
+    font-size: 1.5rem;
+  }
+}
