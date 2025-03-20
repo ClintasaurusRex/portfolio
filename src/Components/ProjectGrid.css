@@ -13,6 +13,7 @@
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+  max-width: 100%;
 }
 
 .project-grid > * {
@@ -44,5 +45,64 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+/* Add these styles for the project cards */
+.project-card {
+  width: 100%;
+  max-width: 20%; /* Set a max-width for larger screens */
+  min-height: 116px; /* Minimum height to maintain card shape */
+  overflow: hidden; /* Prevent text overflow */
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  /* Prevent long titles from breaking layout */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.project-card p {
+  /* For longer descriptions */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Show only 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 280px;
+  }
+
+  .project-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-card p {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 2; /* Show only 2 lines on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    max-width: 260px;
+  }
+
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-card p {
+    font-size: 0.8rem;
   }
 }

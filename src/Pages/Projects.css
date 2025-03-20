@@ -1,14 +1,16 @@
 .project-text {
   font-size: 2rem;
   color: #0f0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
   overflow: hidden;
   border-right: 2px solid #0f0;
-  animation: typingProjects 2s steps(20, end), blink-caret 0.5s step-end infinite;
+  animation: typingProjects 2s steps(20, end),
+    blink-caret 0.5s step-end infinite;
   white-space: nowrap;
   width: fit-content;
   max-width: 12ch;
+  margin: 1rem auto; /* Center the text */
 }
 
 @keyframes typingProjects {
@@ -16,7 +18,7 @@
     width: 0;
   }
   to {
-    width: 12ch; /* Adjust to fit message length */
+    width: 12ch;
   }
 }
 
@@ -27,5 +29,65 @@
   }
   50% {
     border-right-color: #0f0;
+  }
+}
+
+/* Responsive text sizes */
+@media (max-width: 768px) {
+  .project-text {
+    font-size: 1.75rem;
+    max-width: 10ch;
+  }
+
+  @keyframes typingProjects {
+    to {
+      width: 10ch;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .project-text {
+    font-size: 1.5rem;
+    max-width: 8ch;
+  }
+
+  @keyframes typingProjects {
+    to {
+      width: 8ch;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .project-text {
+    font-size: 1.25rem;
+    max-width: 7ch;
+  }
+
+  @keyframes typingProjects {
+    to {
+      width: 7ch;
+    }
+  }
+}
+
+/* Container for projects */
+.projects-container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Ensure text remains visible during webfont load */
+.project-text {
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+/* Maintain green glow effect across screen sizes */
+@media (max-width: 480px) {
+  .project-text {
+    text-shadow: 0 0 3px #0f0, 0 0 8px #0f0;
   }
 }
