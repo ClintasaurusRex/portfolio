@@ -50,7 +50,6 @@
   opacity: 1;
   visibility: visible;
 }
-/* Add these styles for the project cards */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -75,7 +74,40 @@
 
   .project-card p {
     font-size: 0.85rem;
-    -webkit-line-clamp: 2; /* Show only 2 lines on mobile */
+  }
+}
+
+/* Keep your existing hover image styles */
+.project-hover-image {
+  position: absolute;
+  left: calc(100% + 20px);
+  top: 50%;
+  transform: translateY(-50%) translateX(-120px);
+  width: 300px;
+  height: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 2.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+  z-index: 10;
+}
+
+.project-card:hover .project-hover-image {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0);
+}
+
+.project-card:hover .project-hover-image {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* MEDIA QUIRESE */
+@media (max-width: 768px) {
+  .project-hover-image {
+    display: none;
   }
 }
 
@@ -91,27 +123,6 @@
   .project-card p {
     font-size: 0.8rem;
   }
-}
-
-/* Keep your existing hover image styles */
-.project-hover-image {
-  position: absolute;
-  left: calc(100% + 20px);
-  top: 50%;
-  transform: translateY(-50%);
-  width: 300px;
-  height: auto;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  border-radius: 8px;
-  box-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
-  z-index: 10;
-}
-
-.project-card:hover .project-hover-image {
-  opacity: 1;
-  visibility: visible;
 }
 
 /* Adjust the breakpoint to handle mobile devices */
