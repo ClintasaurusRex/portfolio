@@ -19,8 +19,14 @@
   background-color: var(--darkreader-bg--bs-nav-pills-link-active-bg, #181a1b);
 }
 .navbar {
+  position: relative;
+  z-index: 1000; /* High z-index to stay on top */
   padding: 0;
-  background-color: black !important; /* Override Bootstrap's bg-light */
+  background-color: rgb(
+    30,
+    33,
+    34
+  ) !important; /* Make sure background is solid */
 }
 
 /* Style the toggle button */

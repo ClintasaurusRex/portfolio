@@ -1,4 +1,4 @@
-// import MatrixAnimation from "../Components/MatrixAnimation";
+import MatrixAnimation from '../Components/MatrixAnimation';
 import Footer from '../Components/Footer';
 import { NavLink } from 'react-router-dom';
 import useTypingEffect from '../hooks/typingEffect';
@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <>
-      {/* <MatrixAnimation /> */}
+      <MatrixAnimation />
       <div className='hero-section'>
         <div className='container'>
           <div className='hero-content'>
