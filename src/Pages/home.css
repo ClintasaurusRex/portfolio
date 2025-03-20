@@ -317,16 +317,14 @@ footer {
   }
 }
 
-.tech-icon.react-spin {
+/* .tech-icon.react-spin {
   animation: spin 10s linear infinite;
   transform-origin: center;
-}
+} */
 
-.tech-icon.react-spin:hover {
-  animation: spin 10s linear infinite;
-  transform: translateY(-5px) scale(1.1);
-  filter: drop-shadow(0 0 5px #0f0) brightness(0) saturate(100%) invert(56%)
-    sepia(96%) saturate(454%) hue-rotate(86deg) brightness(128%) contrast(119%);
+.tech-icon-wrapper:hover .tech-icon#react-spin {
+  /* animation: spin 10s linear infinite; */
+  transform: translateY(25px) scale(1.5);
 }
 
 /* Maintain green HUD theme with responsiveness */
@@ -601,21 +599,21 @@ footer {
 .tech-icon-wrapper:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
-  transform: translateX(-50%) translateY(0);
+  transform: translateX(0%) translateY(-50);
 }
 
 /* Maintain existing hover effects */
 .tech-icon-wrapper:hover .tech-icon {
-  transform: translateY(-5px) scale(1.1);
-  filter: drop-shadow(0 0 5px #0f0) brightness(0) saturate(100%) invert(56%)
+  transform: translateY(25px) scale(1.5);
+  filter: drop-shadow(0 0 5px #0f0) brightness(50) saturate(100%) invert(56%)
     sepia(96%) saturate(454%) hue-rotate(86deg) brightness(128%) contrast(119%);
 }
 
 /* Keep the React spin animation working with tooltip */
-.tech-icon-wrapper:hover .tech-icon.react-spin {
+/* .tech-icon-wrapper:hover .tech-icon .react-spin {
+  transform: translateY(25px) scale(1.5);
   animation: spin 10s linear infinite;
-  transform: translateY(-5px) scale(1.1);
-}
+} */
 
 /* Responsive adjustments for tooltips */
 @media (max-width: 768px) {

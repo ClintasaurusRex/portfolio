@@ -124,23 +124,23 @@
     width: 25px;
   }
 }
-
 .tech-icon.react-spin {
   animation: spin 10s linear infinite;
 }
 
 .tech-icon:hover {
-  transform: translateY(-3px);
+  /* animation: spin 10s linear infinite; */
+  transform: translateY(-5px);
   filter: drop-shadow(0 0 5px #0f0) brightness(0) saturate(100%) invert(56%)
     sepia(96%) saturate(454%) hue-rotate(86deg) brightness(128%) contrast(119%);
 }
 
-.tech-icon.react-spin:hover {
+/* .tech-icon.react-spin:hover {
   animation: spin 10s linear infinite;
   transform: translateY(-3px) scale(1.1);
   filter: drop-shadow(0 0 5px #0f0) brightness(0) saturate(100%) invert(56%)
     sepia(96%) saturate(454%) hue-rotate(86deg) brightness(128%) contrast(119%);
-}
+} */
 
 @media (max-height: 600px) {
   .modal-content {

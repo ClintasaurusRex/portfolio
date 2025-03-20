@@ -54,7 +54,7 @@ function Home() {
                 <img
                   src='/frontEnd/react.svg'
                   alt='React'
-                  className='tech-icon react-spin'
+                  className='tech-icon'
                 />
                 <span className='tooltip-text'>React</span>
               </div>
