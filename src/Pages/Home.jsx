@@ -50,42 +50,66 @@ function Home() {
           <div className='skill-card'>
             <h3>Frontend</h3>
             <div className='tech-icons'>
-              <img
-                src='/frontEnd/react.svg'
-                alt='React'
-                className='tech-icon react-spin'
-              />
-              <img
-                src='/frontEnd/typescript.svg'
-                alt='TypeScript'
-                className='tech-icon'
-              />
-              <img
-                src='/frontEnd/javascript.svg'
-                alt='JavaScript'
-                className='tech-icon'
-              />
-              <img
-                src='/frontEnd/html5.svg'
-                alt='HTML5'
-                className='tech-icon'
-              />
-              <img src='/frontEnd/css.svg' alt='CSS' className='tech-icon' />
-              <img
-                src='/frontEnd/tailwindcss.svg'
-                alt='Tailwind'
-                className='tech-icon'
-              />
-              <img
-                src='/frontEnd/bootstrap.svg'
-                alt='Tailwind'
-                className='tech-icon'
-              />
-              <img
-                src='/frontEnd/mui.svg'
-                alt='Material UI'
-                className='tech-icon'
-              />
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/frontEnd/react.svg'
+                  alt='React'
+                  className='tech-icon react-spin'
+                />
+                <span className='tooltip-text'>React</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/frontEnd/typescript.svg'
+                  alt='TypeScript'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>TypeScript</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/frontEnd/javascript.svg'
+                  alt='JavaScript'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>JavaScript</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/frontEnd/html5.svg'
+                  alt='HTML5'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>HTML5</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img src='/frontEnd/css.svg' alt='CSS' className='tech-icon' />
+                <span className='tooltip-text'>CSS</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/frontEnd/tailwindcss.svg'
+                  alt='Tailwind'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>Tailwind</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/frontEnd/bootstrap.svg'
+                  alt='Bootstrap'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>Bootstrap</span>
+              </div>
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/frontEnd/mui.svg'
+                  alt='Material UI'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>Material UI</span>
+              </div>
             </div>
             <p>
               React, TypeScript, JavaScript, HTML5, CSS3, Tailwind, Material UI
@@ -96,32 +120,39 @@ function Home() {
           <div className='skill-card'>
             <h3>Backend</h3>
             <div className='tech-icons'>
-              <img
-                src='/backEnd/nodedotjs.svg'
-                alt='Node.js'
-                className='tech-icon'
-              />
+              <div className='tech-icon-wrapper'>
+                <img
+                  src='/backEnd/nodedotjs.svg'
+                  alt='Node.js'
+                  className='tech-icon'
+                />
+                <span className='tooltip-text'>Node.js</span>
+              </div>
+              <div className='tech-icon-wrapper'></div>
               <img
                 src='/backEnd/express.svg'
                 alt='Express'
                 className='tech-icon'
               />
-
+              <div className='tech-icon-wrapper'></div>
               <img
                 src='/backEnd/rubyonrails.svg'
                 alt='Ruby on Rails'
                 className='tech-icon'
               />
+              <div className='tech-icon-wrapper'></div>
               <img
                 src='/backEnd/python.svg'
                 alt='Python'
                 className='tech-icon'
               />
+              <div className='tech-icon-wrapper'></div>
               <img
                 src='/backEnd/firebase.svg'
                 alt='Firebase'
                 className='tech-icon'
               />
+              <div className='tech-icon-wrapper'></div>
             </div>
             <p>Node.js, Express, Ruby on Rails, Python, Firebase</p>
           </div>

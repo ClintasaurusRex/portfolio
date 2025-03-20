@@ -549,3 +549,85 @@ footer {
     max-width: 1140px;
   }
 }
+
+/* Add these new styles after your existing tech-icons styles */
+.tech-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tech-icon-wrapper .tooltip-text {
+  visibility: hidden;
+  background-color: rgba(30, 33, 34, 0.95);
+  color: #0f0;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #0f0;
+  box-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+  text-shadow: 0 0 5px #0f0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1000;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+
+  /* Animation */
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  /* Size */
+  width: max-content;
+  max-width: 150px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* Tooltip arrow */
+.tech-icon-wrapper .tooltip-text::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #0f0 transparent transparent transparent;
+}
+
+/* Show tooltip on hover */
+.tech-icon-wrapper:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Maintain existing hover effects */
+.tech-icon-wrapper:hover .tech-icon {
+  transform: translateY(-5px) scale(1.1);
+  filter: drop-shadow(0 0 5px #0f0) brightness(0) saturate(100%) invert(56%)
+    sepia(96%) saturate(454%) hue-rotate(86deg) brightness(128%) contrast(119%);
+}
+
+/* Keep the React spin animation working with tooltip */
+.tech-icon-wrapper:hover .tech-icon.react-spin {
+  animation: spin 10s linear infinite;
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* Responsive adjustments for tooltips */
+@media (max-width: 768px) {
+  .tech-icon-wrapper .tooltip-text {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-icon-wrapper .tooltip-text {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+}
