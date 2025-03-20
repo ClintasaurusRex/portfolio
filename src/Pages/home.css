@@ -40,11 +40,6 @@ footer {
   box-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
 }
 
-.lead {
-  color: #0f0;
-  text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
-}
-
 .nav-homebtns > *:nth-child(1) {
   animation-delay: 3s;
 }

@@ -1,0 +1,141 @@
+.skills-section {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background: rgb(30, 33, 34);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px #0f0, 0 0 20px #0f0;
+  background: rgb(30, 33, 34);
+}
+
+.skill-card h3 {
+  color: #0f0;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 5px #0f0;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+  min-height: 50px;
+}
+
+.tech-icon {
+  height: 40px;
+  width: 40px;
+  transition: all 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(56%) sepia(96%) saturate(454%)
+    hue-rotate(86deg) brightness(128%) contrast(119%);
+}
+
+.tech-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
+.tech-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tech-icon-wrapper:hover .tech-icon#react-spin {
+  transform: translateY(25px) scale(1.5);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+  .skills-grid {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .skill-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .tech-icons {
+    gap: 1rem;
+  }
+
+  .tech-icon {
+    height: 35px;
+    width: 35px;
+  }
+
+  .skill-card {
+    margin: 0 1rem;
+  }
+
+  .skill-card h3 {
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-icons {
+    gap: 0.8rem;
+  }
+
+  .tech-icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+  }
+
+  .skill-card {
+    padding: 1.5rem;
+    margin: 0 0.5rem;
+    box-shadow: 0 0 3px #0f0, 0 0 8px #0f0;
+  }
+
+  .skill-card:hover {
+    box-shadow: 0 0 10px #0f0, 0 0 15px #0f0;
+  }
+}
