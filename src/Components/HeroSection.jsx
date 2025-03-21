@@ -27,6 +27,13 @@ const HeroSection = () => {
               <NavLink to='/contact' className='btn btn-success'>
                 <i className='bi bi-envelope'></i> Contact
               </NavLink>
+              <a
+                href='/code-resume-port.pdf'
+                download='Clint-Arneson-Hiles-Resume.pdf'
+                className='btn btn-success'
+              >
+                <i className='bi bi-file-earmark-pdf'></i> Download Resume
+              </a>
             </nav>
           </div>
           <div className='hero-image'>
