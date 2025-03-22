@@ -42,9 +42,31 @@
 
 /* Responsive styles */
 @media (max-width: 991px) {
+  .navbar-collapse {
+    position: fixed;
+    top: -100;
+    right: -100%; /* Start off-screen */
+    width: 250px; /* Width of the side menu */
+    height: 100vh;
+    background-color: transparent;
+    transition: right 0.3s ease;
+    padding: 1rem;
+    overflow-y: auto;
+    z-index: 1001;
+    .nav-pills {
+      background-color: transparent;
+    }
+  }
+
+  .navbar-collapse.show {
+    right: 0; /* Slide in from right */
+    /* box-shadow: -5px 0 15px rgba(0, 255, 0, 0.2); */
+  }
+
   .nav-pills.custom-nav-pills {
     flex-direction: column;
     padding: 1rem !important;
+    margin-top: 3rem; /* Space for close button */
   }
 
   .nav-item {
@@ -52,7 +74,27 @@
     margin: 5px 0;
   }
 
-  .navbar-collapse {
-    background-color: black;
+  /* Position the toggle button on the right */
+  .navbar-toggler {
+    position: relative;
+    z-index: 1002;
+    margin-left: auto;
+    margin-right: 1rem;
   }
+}
+
+/* Optional: Add a backdrop when menu is open */
+.navbar-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.navbar-backdrop.show {
+  display: block;
 }

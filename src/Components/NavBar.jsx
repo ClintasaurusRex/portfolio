@@ -4,6 +4,13 @@ import React, { useEffect } from 'react';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const NavBar = () => {
+  // const handleNavToggle = () => {
+  //   const backdrop = document.querySelector('.navbar-backdrop');
+  //   if (backdrop) {
+  //     backdrop.classList.toggle('show');
+  //   }
+  // };
+
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-light'>
       <div className='container-fluid'>
@@ -74,6 +81,7 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
+        {/* <div className='navbar-backdrop' onClick={handleNavToggle}></div> */}
       </div>
     </nav>
   );
