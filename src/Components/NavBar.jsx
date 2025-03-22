@@ -1,15 +1,14 @@
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const NavBar = () => {
-  // const handleNavToggle = () => {
-  //   const backdrop = document.querySelector('.navbar-backdrop');
-  //   if (backdrop) {
-  //     backdrop.classList.toggle('show');
-  //   }
-  // };
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const handleNavClick = () => {
+    setIsNavOpen(false);
+  };
 
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-light'>
@@ -21,13 +20,16 @@ const NavBar = () => {
           data-bs-toggle='collapse'
           data-bs-target='#navbarNav'
           aria-controls='navbarNav'
-          aria-expanded='false'
+          aria-expanded={isNavOpen}
           aria-label='Toggle navigation'
+          onClick={() => setIsNavOpen(!isNavOpen)}
         >
           <span className='navbar-toggler-icon'></span>
         </button>
         <div
-          className='collapse navbar-collapse justify-content-between'
+          className={`collapse navbar-collapse justify-content-between ${
+            isNavOpen ? 'show' : ''
+          }`}
           id='navbarNav'
         >
           <ul
@@ -42,6 +44,7 @@ const NavBar = () => {
                 }
                 to='/'
                 role='tab'
+                onClick={handleNavClick}
               >
                 Home
               </NavLink>
@@ -53,6 +56,7 @@ const NavBar = () => {
                 }
                 to='/projects'
                 role='tab'
+                onClick={handleNavClick}
               >
                 Projects
               </NavLink>
@@ -64,6 +68,7 @@ const NavBar = () => {
                 }
                 to='/about'
                 role='tab'
+                onClick={handleNavClick}
               >
                 About
               </NavLink>
@@ -75,13 +80,13 @@ const NavBar = () => {
                 }
                 to='/contact'
                 role='tab'
+                onClick={handleNavClick}
               >
                 Contact
               </NavLink>
             </li>
           </ul>
         </div>
-        {/* <div className='navbar-backdrop' onClick={handleNavToggle}></div> */}
       </div>
     </nav>
   );
