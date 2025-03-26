@@ -24,7 +24,7 @@ export const projects = [
       'This was my first time working with firebase which just came with a learning curve, but the biggest challenge was this was also my first time using Material U.I, learning the syntax was a challenge but quite a lot of fun.',
     link: 'https://joyland.netlify.app/',
     technologies: [
-      'public/frontEnd/react.svg',
+      '/frontEnd/react.svg',
       '/frontEnd/javascript.svg',
       '/frontEnd/mui.svg',
       '/backEnd/firebase.svg',
@@ -74,10 +74,11 @@ export const projects = [
       'During this build I learned how to use Material UI and how to implement it into a project.',
     // link: 'https://github.com/ClintasaurusRex/jungle',
     technologies: [
-      '/backEnd/firebase.svg',
+      '/frontEnd/react.svg',
       '/frontEnd/javascript.svg',
       '/frontEnd/html5.svg',
       '/frontEnd/css.svg',
+      '/backEnd/firebase.svg',
     ],
   },
 ];

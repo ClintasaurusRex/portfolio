@@ -1,8 +1,10 @@
 import './projectCard.css';
-import React from 'react';
+import React, { useState, useRef } from 'react';
 
 const ProjectCard = ({ project, onClick }) => {
-  // Function to get the correct image based on project title
+  const videoRef = useRef(null);
+  const [isHovered, setIsHovered] = useState(false);
+
   const getProjectImage = (title) => {
     switch (title) {
       case 'T.L.D.R':
@@ -16,25 +18,45 @@ const ProjectCard = ({ project, onClick }) => {
       case 'Wyatt Wiebe Wellness Center':
         return '/portVids/wwch.mp4';
       default:
-        return '/portfolio.jpeg'; // fallback image
+        return '/portfolio.jpeg';
     }
   };
 
   const isVideo = (src) => src.endsWith('.mp4');
 
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  };
+
   return (
-    <div className='project-card' onClick={() => onClick(project)}>
+    <div
+      className='project-card'
+      onClick={() => onClick(project)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <h3>{project.title}</h3>
 
       <p>{project.summary}</p>
 
       {isVideo(getProjectImage(project.title)) ? (
         <video
+          ref={videoRef}
           className='project-hover-image'
           muted
           loop
           playsInline
-          autoPlay
           loading='lazy'
         >
           <source src={getProjectImage(project.title)} type='video/mp4' />
