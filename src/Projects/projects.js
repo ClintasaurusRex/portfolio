@@ -1,19 +1,24 @@
 export const projects = [
   {
-    id: 1,
-    title: 'T.L.D.R',
-    summary: 'A google chrome extension that summarizes articles.',
+    id: 4,
+    title: 'Minty Fresh Codeworks',
+    summary: 'This is a personal website for freelance work',
     description:
-      'This extension summarizes and saves web articles for later reading. The extension also provides a text box that the user can talk directly to chatGPT with.',
+      'I built this website to showcase my work and provide a way for potential clients to contact me. It is a simple, clean, and professional website that is easy to navigate and use.',
     challenges:
-      'The biggest challenge was working with the chatGPT API and getting the extension to work with the API and this was our first and only extension that my partner and I made. Learning webpack and how to use it was also a challenge. This project uses Javascript, React, Chrome API, webpack, Scss and ChatGPT API.',
-    link: 'https://chromewebstore.google.com/detail/tldr/fdoabojpkjopijhpfhapkddbafljjfff?hl=en-US&utm_source=ext_sidebar',
+      'This build took me a while to complete but its one of favourite builds, learning more about more about modern web design and how to implement it was a challenge but a fun one.',
+    link: 'https://mintyfreshcodeworks.netlify.app/',
     technologies: [
       '/frontEnd/react.svg',
       '/frontEnd/javascript.svg',
+      '/frontEnd/html5.svg',
       '/frontEnd/css.svg',
+      '/backEnd/firebase.svg',
+      // '/backEnd/express.svg',
+      // '/database/mysql.svg',
     ],
   },
+
   {
     id: 2,
     title: 'Joyland Prime Academy',
@@ -44,26 +49,22 @@ export const projects = [
       '/frontEnd/css.svg',
     ],
   },
-
   {
-    id: 4,
-    title: 'Minty Fresh Codeworks',
-    summary: 'This is a personal website for freelance work',
+    id: 1,
+    title: 'T.L.D.R',
+    summary: 'A google chrome extension that summarizes articles.',
     description:
-      'I built this website to showcase my work and provide a way for potential clients to contact me. It is a simple, clean, and professional website that is easy to navigate and use.',
+      'This extension summarizes and saves web articles for later reading. The extension also provides a text box that the user can talk directly to chatGPT with.',
     challenges:
-      'This build took me a while to complete but its one of favourite builds, learning more about more about modern web design and how to implement it was a challenge but a fun one.',
-    link: 'https://mintyfreshcodeworks.netlify.app/',
+      'The biggest challenge was working with the chatGPT API and getting the extension to work with the API and this was our first and only extension that my partner and I made. Learning webpack and how to use it was also a challenge. This project uses Javascript, React, Chrome API, webpack, Scss and ChatGPT API.',
+    link: 'https://chromewebstore.google.com/detail/tldr/fdoabojpkjopijhpfhapkddbafljjfff?hl=en-US&utm_source=ext_sidebar',
     technologies: [
       '/frontEnd/react.svg',
       '/frontEnd/javascript.svg',
-      '/frontEnd/html5.svg',
       '/frontEnd/css.svg',
-      '/backEnd/firebase.svg',
-      // '/backEnd/express.svg',
-      // '/database/mysql.svg',
     ],
   },
+
   {
     id: 3,
     title: 'Wyatt Wiebe Wellness Center',
