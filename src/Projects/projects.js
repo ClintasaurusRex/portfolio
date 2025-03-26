@@ -24,7 +24,7 @@ export const projects = [
       'This was my first time working with firebase which just came with a learning curve, but the biggest challenge was this was also my first time using Material U.I, learning the syntax was a challenge but quite a lot of fun.',
     link: 'https://joyland.netlify.app/',
     technologies: [
-      '/frontEnd/react.svg',
+      'public/frontEnd/react.svg',
       '/frontEnd/javascript.svg',
       '/frontEnd/mui.svg',
       '/backEnd/firebase.svg',
@@ -47,33 +47,34 @@ export const projects = [
 
   {
     id: 4,
-    title: 'PhotoLabs',
-    summary: 'A Full-stack mock photo gallery application.',
+    title: 'Minty Fresh Codeworks',
+    summary: 'This is a personal website for freelance work',
     description:
-      'PhotoLabs is a modern, full-stack, responsive single-page application (SPA) built with React that allows users to explore, view, and interact with a collection of high-quality photographs. Key features include browsing a diverse collection of photos, navigating through different photo categories, viewing enlarged versions of photos with related images, liking photos, and responsive design for seamless use across devices. This project was built with React, JavaScript, HTML, Sass, Express, PostgreSQL.',
+      'I built this website to showcase my work and provide a way for potential clients to contact me. It is a simple, clean, and professional website that is easy to navigate and use.',
     challenges:
-      'PhotoLabs was my very first React project which came with many challenges like understanding props and state. Otherwise a very fun project to work on. I also plan to revisit this project and add more features to it.',
-    link: 'https://github.com/ClintasaurusRex/photoLab',
+      'This build took me a while to complete but its one of favourite builds, learning more about more about modern web design and how to implement it was a challenge but a fun one.',
+    link: 'https://mintyfreshcodeworks.netlify.app/',
     technologies: [
       '/frontEnd/react.svg',
       '/frontEnd/javascript.svg',
       '/frontEnd/html5.svg',
       '/frontEnd/css.svg',
-      '/backEnd/express.svg',
-      '/database/mysql.svg',
+      '/backEnd/firebase.svg',
+      // '/backEnd/express.svg',
+      // '/database/mysql.svg',
     ],
   },
   {
     id: 3,
-    title: 'Jungle',
-    summary: 'Full-stack mock online shopping platform.',
+    title: 'Wyatt Wiebe Wellness Center',
+    summary: 'Full-stack application for a wellness center',
     description:
-      'Jungle is a mini e-commerce application built with Rails 6.1, designed to teach Rails by example. This application allows users to browse and search for products, manage their shopping cart, and securely checkout using Stripe. Additionally, it includes features for user authentication, account management, and an admin dashboard for inventory management.This project uses Ruby, HTML, Javascript and SCSS.',
+      'This is a full-stack application for a wellness center that allows the admin to manage the center and the clients that come in. The project was put on hold but the owner due to changes to the center',
     challenges:
-      'Jungle was tricky because this was my first project using ruby on rails. Once I started to get the hang of how rails worked, it was a lot easier to understand how to implement the features that I wanted to add to the project and this was actually one of my favorite projects to work on.',
-    link: 'https://github.com/ClintasaurusRex/jungle',
+      'During this build I learned how to use Material UI and how to implement it into a project.',
+    // link: 'https://github.com/ClintasaurusRex/jungle',
     technologies: [
-      '/backEnd/rubyonrails.svg',
+      '/backEnd/firebase.svg',
       '/frontEnd/javascript.svg',
       '/frontEnd/html5.svg',
       '/frontEnd/css.svg',
